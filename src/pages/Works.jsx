@@ -47,13 +47,13 @@ function Works() {
         <div className='text-[#FFFDD0] w-[50%] h-20 flex justify-center items-center font-me text-xl ml-0 mr-0' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum esse non porro corrupti dolorem doloremque sint cupiditate atque iure nesciunt. Voluptas aut illo sunt vero ut amet eligendi voluptate facere vitae assumenda doloremque harum omnis, ab quisquam id. Praesentium eum eligendi aut voluptate doloribus architecto blanditiis iure officiis fugiat magnam?</div>
 
         <Link><Tilt className="Tilt w-20 h-20 bg-[#774069] rounded-[20%] flex justify-center items-center text-[#FFFDD0] text-xl font-me hover:sw ml-20 shadow-c-purple" options={defaultOptions} style={{ height: 250, width: 250 }}>
-        <div className='text-9xl'>🙂</div>
+        <div className='text-9xl'>😀</div>
         </Tilt></Link>
         </div>
 
         <div className='flex flex-row justify-center items-center bg-[#303030] mt-20'>
         <Link><Tilt className="Tilt w-20 h-20 bg-[#774069] rounded-[20%] flex justify-center items-center text-[#FFFDD0] text-xl font-me hover:sw ml-0 shadow-c-purple" options={defaultOptions} style={{ height: 250, width: 250 }}>
-        <div className='text-9xl'>🙂</div>
+        <div className='text-9xl'>😊</div>
         </Tilt></Link>
 
         <div className='text-[#FFFDD0] w-[50%] h-20 flex justify-center items-center font-me text-xl ml-28 mr-0' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum esse non porro corrupti dolorem doloremque sint cupiditate atque iure nesciunt. Voluptas aut illo sunt vero ut amet eligendi voluptate facere vitae assumenda doloremque harum omnis, ab quisquam id. Praesentium eum eligendi aut voluptate doloribus architecto blanditiis iure officiis fugiat magnam?</div>
@@ -63,7 +63,7 @@ function Works() {
         <div className='text-[#FFFDD0] w-[50%] h-20 flex justify-center items-center font-me text-xl ml-0 mr-0' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum esse non porro corrupti dolorem doloremque sint cupiditate atque iure nesciunt. Voluptas aut illo sunt vero ut amet eligendi voluptate facere vitae assumenda doloremque harum omnis, ab quisquam id. Praesentium eum eligendi aut voluptate doloribus architecto blanditiis iure officiis fugiat magnam?</div>
 
         <Link><Tilt className="Tilt w-20 h-20 bg-[#774069] rounded-[20%] flex justify-center items-center text-[#FFFDD0] text-xl font-me hover:sw ml-20 shadow-c-purple" options={defaultOptions} style={{ height: 250, width: 250 }}>
-        <div className='text-9xl'>🙂</div>
+        <div className='text-9xl'>🤪</div>
         </Tilt></Link>
         </div>
 
