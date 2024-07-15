@@ -17,6 +17,18 @@ export default {
         ro: ["Roboto" , "sans-serif"],
         w: ["Wittgenstein" , "sans-serif"]
       },
+      textShadow: {
+        'custom-light': '2px 2px 4px rgba(0, 0, 0, 0.5)',
+        'custom-dark': '4px 4px 6px rgba(0, 0, 0, 0.4)',
+        'custom-color': '3px 3px 5px rgba(255, 0, 0, 0.3)',
+      },
+      boxShadow: {
+        // "c-purple":'0 0 20px #774069',
+        "c-purple":'0 0 30px #FFFDD0',
+      },
+      dropShadow:{
+        "c-purple":'0 0 15px #FFFDD0',
+      }
     },
   },
   plugins: [],
