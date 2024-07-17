@@ -63,14 +63,14 @@ function Works() {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum esse non porro corrupti dolorem doloremque sint cupiditate atque iure nesciunt.</p>
 
           <div className='border-2 border-[#FFFDD0] rounded-lg flex flex-row m-8 shadow-inner shadow-[#FFFDD0]'>
-            <div className='flex justify-center items-center h-12 w-24 text-[1.38rem]'>Tools</div>
+            <div className='flex justify-center items-center h-12 w-24 text-[1.38rem] border-r-2 border-[#FFFDD0]'>Tools</div>
 
-            <div className='flex justify-center items-center'>
-            <span className='border-l-2 border-[#FFFDD0] h-12 flex justify-center items-center w-20 rounded-sm'>HTML</span>
+            <div className='flex justify-around items-center'>
+            <span className=' flex justify-center items-center w-20 rounded-sm shadow-md h-7'>HTML</span>
             <span className=' h-12 flex justify-center items-center w-20'>CSS</span>
             <span className=' h-12 flex justify-center items-center w-20'>JS</span>
-            <span className='border-l-2 border-[#FFFDD0] h-12 flex justify-center items-center w-20'>React</span>
-            <span className='border-l-2 border-[#FFFDD0] h-12 flex justify-center items-center w-20'>NODE</span>
+            <span className=' h-12 flex justify-center items-center w-20'>React</span>
+            <span className=' h-12 flex justify-center items-center w-20'>NODE</span>
             </div>
           </div>
 
