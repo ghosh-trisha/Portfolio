@@ -25,6 +25,7 @@ export default {
       boxShadow: {
         // "c-purple":'0 0 20px #774069',
         "c-purple":'0 0 30px #FFFDD0',
+        'c-gray': '-7px 33px 60px 10px #FFFDD0',
       },
       dropShadow:{
         "c-purple":'0 0 15px #FFFDD0',
