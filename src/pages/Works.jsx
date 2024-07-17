@@ -67,7 +67,7 @@ function Works() {
 
             <div className='flex justify-around items-center'>
             <span className=' flex justify-center items-center w-20 rounded-sm shadow-md h-7 bg-[#1C1B19] m-3'>HTML</span>
-            <span className=' h-12 flex justify-center items-center w-20 rounded-sm shadow-md h-7 bg-[#1C1B19] m-3'>CSS</span>
+            <span className=' flex justify-center items-center w-20 rounded-sm shadow-md h-7 bg-[#1C1B19] m-3'>CSS</span>
             <span className=' h-12 flex justify-center items-center w-20'>JS</span>
             <span className=' h-12 flex justify-center items-center w-20'>React</span>
             <span className=' h-12 flex justify-center items-center w-20'>NODE</span>
