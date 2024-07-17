@@ -58,15 +58,15 @@ function Works() {
         {/* text div */}
         <div className='text-[#FFFDD0] w-[40%] h-20 flex flex-col justify-center items-center font-me ml-28 mr-0' >
 
-          <h2 className='m-4 text-4xl'>Portfolio</h2>
+          <h2 className='m-4 text-4xl text-[#E8251C]'>Portfolio</h2>
 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum esse non porro corrupti dolorem doloremque sint cupiditate atque iure nesciunt.</p>
+          <p className='text-[#FBAC20]' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum esse non porro corrupti dolorem doloremque sint cupiditate atque iure nesciunt.</p>
 
-          <div className='border-2 border-[#FFFDD0] rounded-lg flex flex-row m-8 shadow-inner shadow-[#FFFDD0]'>
-            <div className='flex justify-center items-center h-12 w-24 text-[1.38rem] border-r-2 border-[#FFFDD0]'>Tools</div>
+          <div className='border-2 border-[#C07ABE] rounded-lg flex flex-row m-8 shadow-inner shadow-[#C07ABE] '>
+            <div className='flex justify-center items-center h-12 w-24 text-[1.38rem] text-[#C07ABE] '>Tools</div>
 
-            <div className='flex justify-around items-center'>
-            <span className=' flex justify-center items-center w-20 rounded-sm shadow-md h-7 bg-[#1C1B19] m-3'>HTML</span>
+            <div className='flex justify-around items-center border-l-2 border-[#FFFDD0]'>
+            <span className=' flex justify-center items-center w-20 rounded-sm shadow-2xl h-7 bg-[#FFFDD0] text-[#774069] m-3'>HTML</span>
             <span className=' flex justify-center items-center w-20 rounded-sm shadow-md h-7 bg-[#1C1B19] m-3'>CSS</span>
             <span className=' h-12 flex justify-center items-center w-20'>JS</span>
             <span className=' h-12 flex justify-center items-center w-20'>React</span>
