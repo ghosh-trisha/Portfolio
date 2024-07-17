@@ -1,6 +1,44 @@
 
 
+// skills
 class TrishaGhosh{
+
+    // I believe in the power of continuous growth, embracing new challenges to enhance my skills and deliver top-notch results.
+    // I'm passionate about staying up-to-date with the latest technologies and trends, and I'm always looking for ways to improve our development processes.
+
+    constructor(){
+        this.name = 'Trisha Ghosh';
+        this.dob = '02-09-2003';
+        this.contactNumber = '+91 9875588301';
+        this.email = 'trishaghosh0209@gmail.com'
+    }
+
+    softSkills(){
+        return [
+            'First principal thinking' , 'Problem-Solving' , 'Fast Learning' , 'Team Work' , 'Critical thinking'
+        ]
+    }
+    
+    skills(){
+        return [
+            'Front-end Development' , 'Back-end Development' , 'Database Management' , 'Rest API Building' , 'Deployment' , 'Data Structures & Algorithms' , 'Web Design' , 'Chrome Extension Development' 
+        ]
+    }
+
+    technicalSkills(){
+        return [
+            'C' , 'C++' , 'Core Java' , 'JDBC' , 'JavaScript' , 'HTML' , 'CSS' , 'Tailwind' , 'Bootstrap' , 'React' , 'Node' , 'Express' , 'MongoDB' , 'Mongoose' , 'SQL' , 'Git' , 'GitHub' , 'Postman' , 'npm' , 'Maven'
+        ]
+    }
+
+}
+
+
+// self
+class TrishaGhosh{
+
+    // My variety of skills is continuously expanding
+    // Unity is strength, and together, we can achieve greatness – let's work together to achieve amazing things!
 
     constructor(){
         this.name = 'Trisha Ghosh';
@@ -17,21 +55,61 @@ class TrishaGhosh{
         ]
     }
 
-    skills(){
-        return [
-            'C' , 'C++' , 'Core Java' , 'JDBC' , 'JavaScript' , 'HTML' , 'CSS' , 'Tailwind' , 'Bootstrap' , 'React' , 'Node' , 'Express' , 'MongoDB' , 'Mongoose' , 'SQL' , 'Git' , 'GitHub' , 'Postman' , 'npm' , 'Maven'
-        ]
-    }
-
     achievements(){
         return [
             'Selected for College level E-commerce Business Project' , 'Solved 300+ coding problems in different coding platforms'
         ]
     }
 
+    languagesKnown(){
+        return [
+            'English' , 'Hindi' , 'Bengali'
+        ]
+    }
+
 }
 
+
+// skills
 class BimanDas{
+
+    // My dedication to mastering diverse programming languages drives my ability to create dynamic and robust applications.
+    // Driven by curiosity, I push myself to master new technologies and methodologies, always aiming to exceed expectations.
+
+    constructor(){
+        this.name = 'Biman Das';
+        this.dob = '16-05-2003';
+        this.contactNumber = '+91 7076316977';
+        this.email = 'daskumarbiman2020@gmail.com'
+    }
+
+    softSkills(){
+        return [
+            'Fast learning' , 'Problem-Solving' , 'Fast Learning' , 'Team Work' , 'Logical thinking'
+        ]
+    }
+    
+    skills(){
+        return [
+            'Front-end Development' , 'Back-end Development' , 'Database Management' , 'Deployment' , 'Data Structures & Algorithms' , 'Web Design' , 'Chrome Extension Development' , 'App Development'
+        ]
+    }
+
+    technicalSkills(){
+        return [
+            'C' , 'C++' , 'Core Java' , 'HTML' , 'CSS' , 'JavaScript' , 'Tailwind CSS' , 'Adv JavaScript' , 'Bootstrap' , 'React.js' , 'Node.js' , 'Express.js' , 'Next.js' , 'SQL' , 'MongoDb' , 'Mongoose' , 'DSA' , 'JDBC' , 'Shell Script' , 'Git' , 'GitHub' , 'GitLab' , 'Postman' , 'Firebase' , 'Cloudinary' , 'Developing rest APIs' , 'OAuth 2.0' , 'JWT' , 'GraphQL' , 'Docker' , 'GitHub Actions' , 'Digital Ocean Functions' , 'Servlet' , 'Jsp' , 'Spring' , 'Spring Boot' , 'Flutter'
+        ]
+    }
+
+}
+
+
+// self
+class BimanDas{
+
+    // I am constantly innovating and integrating new technologies to deliver top-notch solutions.
+    // I thrive on adapting to new challenges, using them as stepping stones to expand my expertise and achieve success.
+    // I value teamwork and collaboration, and I'm eager to support my colleagues in achieving our goals & celebrating our collective success.
 
     constructor(){
         this.name = 'Biman Das';
@@ -48,15 +126,15 @@ class BimanDas{
         ]
     }
 
-    skills(){
-        return [
-            'C' , 'C++' , 'Core Java' , 'HTML' , 'CSS' , 'JavaScript' , 'Tailwind CSS' , 'Adv JavaScript' , 'Bootstrap' , 'React.js' , 'Node.js' , 'Express.js' , 'Next.js' , 'SQL' , 'MongoDb' , 'Mongoose' , 'DSA' , 'JDBC' , 'Shell Script' , 'Git' , 'GitHub' , 'GitLab' , 'Postman' , 'Firebase' , 'Cloudinary' , 'Developing rest APIs' , 'OAuth 2.0' , 'JWT' , 'GraphQL' , 'Docker' , 'GitHub Actions' , 'Digital Ocean Functions' , 'Servlet' , 'Jsp' , 'Spring' , 'Spring Boot' , 'Flutter'
-        ]
-    }
-
     achievements(){
         return [
             'Selected for College level E-commerce Business Project' , 'Solved 500+ coding problems in different coding platforms' , 'Best UI Award in Hackathon'
+        ]
+    }
+
+    languagesKnown(){
+        return [
+            'English' , 'Hindi' , 'Bengali'
         ]
     }
 

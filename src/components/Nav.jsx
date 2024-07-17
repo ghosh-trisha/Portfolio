@@ -16,7 +16,7 @@ function Nav() {
   const [menu, setMenu] = useState(true);
   const menuRef = useRef();
   return (
-    <header className=" md:px-24 md:flex md:items-center md:justify-between p-4 pb-0  md:pb-4 bg-[#774069] border-[#774069] border-b-4 fixed w-screen top-0 h-[4.5rem] ">
+    <header className=" md:px-24 md:flex md:items-center md:justify-between p-4 pb-0  md:pb-4 bg-[#774069] border-[#774069] border-b-4 fixed w-screen top-0 h-[4.3rem] z-50 ">
       <div className="flex items-center justify-between mb-4 md:mb-0">
         <h1 className="leading-none text-2xl text-grey-darkest">
           <Link className="no-underline text-grey-darkest hover:text-black text-[#FFFDD0]" to="/">

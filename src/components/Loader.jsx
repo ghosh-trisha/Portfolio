@@ -23,7 +23,7 @@ export default function Loader() {
       };
     }, []);
   return (
-    <div className='w-screen h-screen fixed flex flex-row justify-center items-center '>
+    <div className='w-screen h-screen fixed flex flex-row justify-center items-center z-[90] bg-slate-100'>
       <RingLoader
       // color="#64748b"
       // color="#774069"

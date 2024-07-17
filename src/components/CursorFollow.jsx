@@ -6,7 +6,7 @@ const CursorFollow = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [hovering, setHovering] = useState(false);
   setInterval(() => {
-    console.log(hovering)
+    // console.log(hovering)
   }, 4000);
   useEffect(() => {
  
@@ -45,9 +45,9 @@ const CursorFollow = () => {
   }, []);
 
   return (
-    <div>
+    <>
       <div
-        className={`pointer-events-none fixed transform -translate-x-1/2 -translate-y-1/2 z-50 transition-all duration-0 ${hovering ? 'w-24 h-24' : 'w-8 h-8'}`}
+        className={`pointer-events-none fixed transform -translate-x-1/2 -translate-y-1/2 z-[100] transition-all duration-0 ${hovering ? 'w-24 h-24' : 'w-8 h-8'}`}
         style={{
           left: `${position.x}px`,
           top: `${position.y}px`,
@@ -58,7 +58,7 @@ const CursorFollow = () => {
           <div className={`w-2 h-2 rounded-full bg-lime-400`}></div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

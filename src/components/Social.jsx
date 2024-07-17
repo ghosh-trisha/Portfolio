@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
 
 function Social() {
   return (
-    <div className="fixed md:left-0 md:top-[38%] bottom-0 md:w-16  md:h-[37%] rounded-r-lg text-[#FFFDD0] flex md:flex-col max-md:flex-row max-md:px-20 max-md:py-1 max-md:w-full items-center md:justify-around max-md:justify-around max-md:border-t-4 border-[#774069] bg-[#774069] text-xl">
+    <div className="z-50 fixed md:left-0 md:top-[38%] bottom-0 md:w-16  md:h-[37%] rounded-r-lg text-[#FFFDD0] flex md:flex-col max-md:flex-row max-md:px-20 max-md:py-1 max-md:w-full items-center md:justify-around max-md:justify-around max-md:border-t-4 border-[#774069] bg-[#774069] text-xl">
       {/* <Link to={""}>
         <MdWifiCalling3 className="scale-150 my-3 " />
       </Link> */}

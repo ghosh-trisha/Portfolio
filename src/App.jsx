@@ -11,6 +11,7 @@ import CursorFollow from './components/CursorFollow.jsx'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Loader from './components/Loader.jsx'
 // import TypedComponent from './components/Typed.jsx'
+// import Rough from './pages/Rough.jsx'
 
 // <a herf="/self"> <a/>  =  <link to="/self" > <link/>
 
@@ -45,6 +46,7 @@ function App() {
           <Route path='/resume' element={<Resume />}></Route>
           <Route path='/self' element={<Self />}></Route>
           <Route path='/*' element={<NotFound />}></Route>
+          {/* <Route path='/biman' element={<Rough />}></Route> */}
           
         </Routes>
       </Router>
