@@ -86,7 +86,7 @@ function Works() {
         </p>
 
 
-        <div className="flex flex-col justify-center items-center bg-[#303030] pb-24  pl-20 pr-5">
+        <div className="flex flex-col justify-center items-center bg-[#303030] pb-24  lg:pl-20 pl-5 pr-5">
           {data.map((project, index) => {
             if (index % 2 == 1 & window.innerWidth >= 1000) {
               return (

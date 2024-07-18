@@ -15,37 +15,36 @@ function Home() {
     <>
       <div className="bg-[#774069] h-screen w-screen px-0  md:px-20 fixed pb-0 z-10">
 
-        <div className='z-30 bg-transparent'>
-        <Draggable >
+        {/* <div className='z-30 bg-transparent'>
+
+        <Draggable>
+          <img
+            src={"/images/home/git.png"}
+            className="w-14 absolute left-[3rem] top-[24.5rem] -rotate-6 hover:drop-shadow-c-purple duration-200 cursor-pointer z-40 "
+            onDoubleClick={() => {
+              window
+                .open("https://github.com/", "_blank")
+                .focus();
+            }}
+            draggable={false}
+            alt=""
+          />
+        </Draggable>
+
+          <Draggable >
               <img
                 src={"/images/home/react.png"}
                 className="w-16 absolute right-0 top-5  hover:drop-shadow-c-purple duration-200 cursor-pointer z-40"
                 onDoubleClick={() => {
                   window
-                    .open("https://www.w3schools.com/mongodb/", "_blank")
+                    .open("https://react.dev/reference/react", "_blank")
                     .focus();
                 }}
                 draggable={false}
                 cursor={"move"}
                 alt=""
               />
-            </Draggable>
-
-      
-
-             <Draggable>
-              <img
-                src={"/images/home/git.png"}
-                className="w-14 absolute left-[3rem] top-[10rem] -rotate-6 z-10 hover:drop-shadow-c-purple duration-200 cursor-pointer z-40"
-                onDoubleClick={() => {
-                  window
-                    .open("https://github.com/", "_blank")
-                    .focus();
-                }}
-                draggable={false}
-                alt=""
-              />
-             </Draggable>
+          </Draggable>
 
              <Draggable>
               <img
@@ -88,11 +87,11 @@ function Home() {
                 alt=""
               />
            </Draggable> 
-        </div>
+        </div> */}
 
-        <div className="bg-[#303030] min-h-[85%] w-full md:h-auto flex flex-col md:flex-row rounded-b-lg z-20">
+        <div className="bg-[#303030] min-h-[85%] w-full md:h-auto flex flex-col flex-wrap md:flex-row rounded-b-lg z-20">
          
-          <div className="basis-full relative sm:basis-1/2 bg-[#303030]  p-4 md:p-0">
+          <div className="basis-full relative sm:basis-1/2 bg-[#303030] p-4 md:p-0 max-lg:flex max-lg:justify-center max-lg:items-center max-lg:flex-wrap bg-lime-700">
             {/* text */}
             <Text />
 
