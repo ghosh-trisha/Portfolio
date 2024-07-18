@@ -28,7 +28,7 @@ export default {
         "c-purple":'0 0 30px #FFFDD0',
         'c-gray': '-7px 33px 60px 10px #FFFDD0',
         'c2-purple' : '0px 0px 5px 1px #C07ABE',
-        'c-img-card-purple': '-3px 10px 60px 10px #C07ABE',
+        'c-img-card-purple': '-3px 10px 30px 1px #C07ABE',
         'c-img-card-purple-hover': '5px 20px 60px 12px #C07ABE',
         'c-img-card': '0 0px 0px 10px #94a3b8',
       },
