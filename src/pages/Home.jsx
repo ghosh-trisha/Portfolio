@@ -7,14 +7,132 @@ import { LuBrainCircuit } from "react-icons/lu";
 import { BsFileEarmarkPerson } from "react-icons/bs";
 import { BsInfoCircle } from "react-icons/bs";
 import {Link} from 'react-router-dom'
+import Draggable from 'react-draggable';
 
 
 function Home() {
   return (
     <>
-      <div className="bg-[#774069] h-screen w-screen px-0  md:px-20 fixed pb-0">
+      <div className="bg-[#774069] h-screen w-screen px-0  md:px-20 fixed pb-0 z-10">
 
-        <div className="bg-[#303030] min-h-[85%] w-full md:h-auto flex flex-col md:flex-row rounded-b-lg">
+        <div className='z-30 bg-transparent'>
+        <Draggable >
+              <img
+                src={"/images/home/react.png"}
+                className="w-16 absolute right-0 top-5  hover:drop-shadow-c-purple duration-200 cursor-pointer z-40"
+                onDoubleClick={() => {
+                  window
+                    .open("https://www.w3schools.com/mongodb/", "_blank")
+                    .focus();
+                }}
+                draggable={false}
+                cursor={"move"}
+                alt=""
+              />
+            </Draggable>
+
+            <Draggable>
+              <img
+                src={"/images/home/mongo.png"}
+                className="w-20 absolute left-[0%] top-20 rotate-12 hover:drop-shadow-c-purple duration-200 cursor-pointer z-40"
+                onDoubleClick={() => {
+                  window
+                    .open("https://www.w3schools.com/mongodb/", "_blank")
+                    .focus();
+                }}
+                draggable={false}
+                alt=""
+              />
+            </Draggable>
+
+      
+
+             <Draggable>
+              <img
+                src={"/images/home/git.png"}
+                className="w-14 absolute left-[3rem] top-[10rem] -rotate-6 z-10 hover:drop-shadow-c-purple duration-200 cursor-pointer z-40"
+                onDoubleClick={() => {
+                  window
+                    .open("https://github.com/", "_blank")
+                    .focus();
+                }}
+                draggable={false}
+                alt=""
+              />
+             </Draggable>
+
+             <Draggable>
+              <img
+                src={"/images/home/sql.png"}
+                className="w-20 absolute right-[24%] top-16 -rotate-6 hover:drop-shadow-c-purple duration-200 cursor-pointer z-40"
+                onDoubleClick={() => {
+                  window
+                    .open("https://www.w3schools.com/sql/", "_blank")
+                    .focus();
+                }}
+                draggable={false}
+                alt=""
+              />
+            </Draggable>
+
+            <Draggable>
+              <img
+                src={"/images/home/node.png"}
+                className="w-40 absolute left-[36rem] bottom-16 -rotate-12 hover:drop-shadow-c-purple duration-200 cursor-pointer z-40"
+                onDoubleClick={() => {
+                  window
+                    .open("https://nodejs.org/docs/latest/api/", "_blank")
+                    .focus();
+                }}
+                draggable={false}
+                alt=""
+              />
+            </Draggable>
+
+            <Draggable>
+              <img
+                src={"/images/home/java.png"}
+                className="w-16 absolute right-[45%] top-[3rem] -rotate-6 hover:drop-shadow-c-purple duration-200 cursor-pointer z-40"
+                onDoubleClick={() => {
+                  window
+                    .open("https://www.w3schools.com/java/", "_blank")
+                    .focus();
+                }}
+                draggable={false}
+                alt=""
+              />
+           </Draggable> 
+
+           <Draggable>
+              <img
+                src={"/images/home/js.png"}
+                className="w-12 absolute right-0 bottom-6 rotate-6 hover:drop-shadow-c-purple duration-200 cursor-pointer z-40" 
+                onDoubleClick={() => {
+                  window
+                    .open("https://bimandas.notion.site/JavaScript-f064011bb98b4283b511ed955289f118", "_blank")
+                    .focus();
+                }}
+                draggable={false}
+                alt=""
+              />
+           </Draggable>
+
+           <Draggable >
+              <img
+                src={"/images/home/dsa.png"}
+                className="w-24 absolute left-0 top-[50%] rotate-45 hover:drop-shadow-c-purple duration-200 cursor-pointer z-40"
+                onDoubleClick={() => {
+                  window
+                    .open("https://leetcode.com/studyplan/top-interview-150/", "_blank")
+                    .focus();
+                }}
+                draggable={false}
+                alt=""
+              />
+           </Draggable> 
+        </div>
+
+        <div className="bg-[#303030] min-h-[85%] w-full md:h-auto flex flex-col md:flex-row rounded-b-lg z-20">
          
           <div className="basis-full relative sm:basis-1/2 bg-[#303030]  p-4 md:p-0">
             {/* text */}
@@ -59,6 +177,7 @@ function Home() {
             </Link>
             
           </div>
+
         </div>
 
       </div>

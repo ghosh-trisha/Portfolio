@@ -6,6 +6,7 @@ import Social from '../components/Social.jsx';
 import { Link } from 'react-router-dom'
 // import portfolioPic from '../assets/portfolio.png'
 import styled from "styled-components";
+import Draggable from "react-draggable";
 
 
 const ImgContainer = styled.div`
