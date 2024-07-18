@@ -86,16 +86,16 @@ function Works() {
               </Tilt></Link> */}
 
         {/* text div */}
-        <div className=' text-[#FFFDD0] flex flex-col justify-center items-center font-w mr-0' >
+        <div className=' text-[#FFFDD0] flex flex-col justify-center items-center mr-0' >
 
-          <h2 className='m-4 text-5xl text-[#C07ABE] drop-shadow-c2-purple rounded-lg p-2 flex justify-center items-center' >Portfolio</h2>
+          <h2 className='m-4 text-5xl text-[#C07ABE] drop-shadow-c2-purple rounded-lg p-2 flex justify-center items-center font-me' >Portfolio</h2>
 
-          <p className='text-lg max-w-[32rem]' >Lorem ipsum dolor sit amet consectetur adipisicing elith. Deleniti et quae quis voluptatem tenetur soluta eijkhluius obcaecati molestias laborum illo itaqueiuyuhh gyfhygfft laudantium eligendi, ut architecto saepe hello exercitationem magnam.</p>
+          <p className='text-lg max-w-[32rem] font-w' >Lorem ipsum dolor sit amet consectetur adipisicing elith. Deleniti et quae quis voluptatem tenetur soluta eijkhluius obcaecati molestias laborum illo itaqueiuyuhh gyfhygfft laudantium eligendi, ut architecto saepe hello exercitationem magnam.</p>
 
           <div className='border-2 border-[#C07ABE] rounded-lg flex flex-row  m-8 shadow-inner shadow-[#C07ABE] min-w-96 max-w-[31.5rem]'>
-            <div className='flex justify-center items-center self-center h-full w-24 text-[1.38rem] text-[#C07ABE]'>Tools</div>
+            <div className='flex justify-center items-center self-center h-full w-24 text-[1.38rem] text-[#C07ABE] font-me'>Tools</div>
 
-            <div className='flex  items-center border-l-2 border-[#C07ABE] w-full flex-wrap'>
+            <div className='flex  items-center border-l-2 border-[#C07ABE] w-full flex-wrap font-w'>
             <span className=' flex justify-center items-center px-2 rounded-lg shadow-c2-purple h-7  text-[#C07ABE] m-3'><p className='text-[70%]'>{'</>'}</p>HTML</span>
             <span className=' flex justify-center items-center px-2 rounded-lg shadow-c2-purple h-7  text-[#C07ABE] m-3'><p className='text-[70%]'>{'</>'}</p>CSS</span>
             <span className=' flex justify-center items-center px-2 rounded-lg shadow-c2-purple h-7  text-[#C07ABE] m-3'><p className='text-[70%]'>{'</>'}</p>JS</span>
@@ -111,7 +111,7 @@ function Works() {
             <div class="relative inline-flex  group">
             <div class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
             </div>
-            <div class="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-[#C07ABE] transition-all duration-200 bg-[#1C1B19] font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1C1B19]"
+            <div class="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-[#C07ABE] transition-all duration-200 bg-[#1C1B19] font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1C1B19] font-me"
             role="button">Take a look &nbsp;{'→'}
             </div>
             </div>
@@ -136,7 +136,7 @@ function Works() {
           }
           else{
             return(
-              <div className='flex flex-row justify-around items-center  mt-20 w-full mx-10 max-lg:flex-wrap'>
+              <div className='flex flex-row justify-around items-center mt-20 w-full mx-10 max-lg:flex-wrap'>
         {/* <Link><Tilt className="Tilt w-20 h-20 bg-[#774069] rounded-[20%] flex justify-center items-center text-[#FFFDD0] text-xl font-me hover:sw ml-0 shadow-c-purple" options={defaultOptions} style={{ height: 250, width: 250 }}>
         <div className='text-9xl'>🙂</div>
         </Tilt></Link> */}
@@ -153,16 +153,16 @@ function Works() {
         </div>
 
         {/* text div */}
-        <div className=' text-[#FFFDD0] flex flex-col justify-center items-center font-me mr-0' >
+        <div className=' text-[#FFFDD0] flex flex-col justify-center items-center  mr-0' >
 
-          <h2 className='m-4 text-5xl text-[#C07ABE] drop-shadow-c2-purple rounded-lg p-2 flex justify-center items-center' >Portfolio</h2>
+          <h2 className='m-4 text-5xl text-[#C07ABE] drop-shadow-c2-purple rounded-lg p-2 flex justify-center items-center font-me' >Portfolio</h2>
 
-          <p className='text-lg max-w-[32rem]' >Lorem ipsum dolor sit amet consectetur adipisicing elith. Deleniti et quae quis voluptatem tenetur soluta eijkhluius obcaecati molestias laborum illo itaqueiuyuhh gyfhygfft laudantium eligendi, ut architecto saepe hello exercitationem magnam.</p>
+          <p className='text-lg max-w-[32rem] font-w' >Lorem ipsum dolor sit amet consectetur adipisicing elith. Deleniti et quae quis voluptatem tenetur soluta eijkhluius obcaecati molestias laborum illo itaqueiuyuhh gyfhygfft laudantium eligendi, ut architecto saepe hello exercitationem magnam.</p>
 
           <div className='border-2 border-[#C07ABE] rounded-lg flex flex-row  m-8 shadow-inner shadow-[#C07ABE] min-w-96 max-w-[31.5rem]'>
-            <div className='flex justify-center items-center self-center h-full w-24 text-[1.38rem] text-[#C07ABE]'>Tools</div>
+            <div className='flex justify-center items-center self-center h-full w-24 text-[1.38rem] text-[#C07ABE] font-me'>Tools</div>
 
-            <div className='flex  items-center border-l-2 border-[#C07ABE] w-full flex-wrap'>
+            <div className='flex  items-center border-l-2 border-[#C07ABE] w-full flex-wrap font-me'>
             <span className=' flex justify-center items-center px-2 rounded-lg shadow-c2-purple h-7  text-[#C07ABE] m-3'><p className='text-[70%]'>{'</>'}</p>HTML</span>
             <span className=' flex justify-center items-center px-2 rounded-lg shadow-c2-purple h-7  text-[#C07ABE] m-3'><p className='text-[70%]'>{'</>'}</p>CSS</span>
             <span className=' flex justify-center items-center px-2 rounded-lg shadow-c2-purple h-7  text-[#C07ABE] m-3'><p className='text-[70%]'>{'</>'}</p>JS</span>
@@ -178,7 +178,7 @@ function Works() {
             <div class="relative inline-flex  group">
             <div class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
             </div>
-            <div class="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-[#C07ABE] transition-all duration-200 bg-[#1C1B19] font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1C1B19]"
+            <div class="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-[#C07ABE] transition-all duration-200 bg-[#1C1B19] font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1C1B19] font-me"
             role="button">Take a look &nbsp;{'→'}
             </div>
             </div>
