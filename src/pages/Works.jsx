@@ -33,7 +33,7 @@ const ImgRight=styled.img`
 
     &:hover{
     transform:rotateX(4deg) rotateY(30deg) rotateZ(-2deg) translateX(0rem) translateY(1.5rem);
-  }
+    }
   }
 `
 
