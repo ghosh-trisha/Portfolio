@@ -26,6 +26,20 @@ const ImgLeft=styled.img`
   }
 `
 
+const ImgRight=styled.img`
+  @media(min-width: 1000px){
+    
+    transform:rotateX(4deg) rotateY(-29deg) rotateZ(2deg) translateY(-2rem);
+
+    &:hover{
+    transform:rotateX(4deg) rotateY(30deg) rotateZ(-2deg) translateX(-2rem) translateY(1.5rem);
+  }
+  }
+`
+
+let demo=[0,1,2,3,4,5,6,7,8]
+
+
 function Works() {
 
   // const defaultOptions = {
@@ -40,7 +54,7 @@ function Works() {
   //   easing:         "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
   // }
   
-let demo=[0,1,2,]
+
   return (
     <>
     <div className='min-h-screen w-screen bg-[#303030]'>
@@ -62,7 +76,7 @@ let demo=[0,1,2,]
       </p>
 
 
-      <div className="flex flex-col justify-center items-center bg-[#303030] pb-24 mt-24 pl-20 pr-5">
+      <div className="flex flex-col justify-center items-center bg-[#303030] pb-24 mt-20 pl-20 pr-5">
         {demo.map((element, index) => {
           if(index%2==1 & window.innerWidth>=1000){
             return(
@@ -72,21 +86,22 @@ let demo=[0,1,2,]
               </Tilt></Link> */}
 
         {/* text div */}
-        <div className=' text-[#FFFDD0] flex flex-col justify-center items-center font-me mr-0' >
+        <div className=' text-[#FFFDD0] flex flex-col justify-center items-center font-w mr-0' >
 
           <h2 className='m-4 text-5xl text-[#C07ABE] drop-shadow-c2-purple rounded-lg p-2 flex justify-center items-center' >Portfolio</h2>
 
           <p className='text-lg max-w-[32rem]' >Lorem ipsum dolor sit amet consectetur adipisicing elith. Deleniti et quae quis voluptatem tenetur soluta eijkhluius obcaecati molestias laborum illo itaqueiuyuhh gyfhygfft laudantium eligendi, ut architecto saepe hello exercitationem magnam.</p>
 
-          <div className='border-2 border-[#C07ABE] rounded-lg flex flex-row  m-8 shadow-inner shadow-[#C07ABE] min-w-96 max-w-[30rem]'>
+          <div className='border-2 border-[#C07ABE] rounded-lg flex flex-row  m-8 shadow-inner shadow-[#C07ABE] min-w-96 max-w-[31.5rem]'>
             <div className='flex justify-center items-center self-center h-full w-24 text-[1.38rem] text-[#C07ABE]'>Tools</div>
 
             <div className='flex  items-center border-l-2 border-[#C07ABE] w-full flex-wrap'>
-            <span className=' flex justify-center items-center px-2 rounded-lg shadow-c2-purple h-7  text-[#C07ABE] m-3'>HTML</span>
-            <span className=' flex justify-center items-center px-2 rounded-lg shadow-c2-purple h-7  text-[#C07ABE] m-3'>CSS</span>
-            <span className=' flex justify-center items-center px-2 rounded-lg shadow-c2-purple h-7  text-[#C07ABE] m-3'>JS</span>
-            <span className=' flex justify-center items-center px-2 rounded-lg shadow-c2-purple h-7  text-[#C07ABE] m-3'>React</span>
-            <span className=' flex justify-center items-center px-2 rounded-lg shadow-c2-purple h-7  text-[#C07ABE] m-3'>NODE</span>
+            <span className=' flex justify-center items-center px-2 rounded-lg shadow-c2-purple h-7  text-[#C07ABE] m-3'><p className='text-[70%]'>{'</>'}</p>HTML</span>
+            <span className=' flex justify-center items-center px-2 rounded-lg shadow-c2-purple h-7  text-[#C07ABE] m-3'><p className='text-[70%]'>{'</>'}</p>CSS</span>
+            <span className=' flex justify-center items-center px-2 rounded-lg shadow-c2-purple h-7  text-[#C07ABE] m-3'><p className='text-[70%]'>{'</>'}</p>JS</span>
+            <span className=' flex justify-center items-center px-2 rounded-lg shadow-c2-purple h-7  text-[#C07ABE] m-3'><p className='text-[70%]'>{'</>'}</p>React</span>
+            <span className=' flex justify-center items-center px-2 rounded-lg shadow-c2-purple h-7  text-[#C07ABE] m-3'><p className='text-[70%]'>{'</>'}</p>NODE</span>
+            <span className=' flex justify-center items-center px-2 rounded-lg shadow-c2-purple h-7  text-[#C07ABE] m-3'><p className='text-[70%]'>{'</>'}</p>Tailwind</span>
 
             </div>
           </div>
@@ -107,7 +122,7 @@ let demo=[0,1,2,]
         {/* picture div */}
         <div className='flex justify-center items-center' >
           <ImgContainer className="flex justify-center items-center">
-          <ImgLeft
+          <ImgRight
             src={"/images/work/portfolio.png"}
             className="w-[33.5rem] lg:hover:w-[40rem] duration-[800ms] lg:shadow-c-img-card-purple lg:hover:shadow-c-img-card-purple-hover max-lg:shadow-c-img-card rounded-lg transition-all"
             alt="project pic"
@@ -144,15 +159,16 @@ let demo=[0,1,2,]
 
           <p className='text-lg max-w-[32rem]' >Lorem ipsum dolor sit amet consectetur adipisicing elith. Deleniti et quae quis voluptatem tenetur soluta eijkhluius obcaecati molestias laborum illo itaqueiuyuhh gyfhygfft laudantium eligendi, ut architecto saepe hello exercitationem magnam.</p>
 
-          <div className='border-2 border-[#C07ABE] rounded-lg flex flex-row  m-8 shadow-inner shadow-[#C07ABE] min-w-96 max-w-[30rem]'>
+          <div className='border-2 border-[#C07ABE] rounded-lg flex flex-row  m-8 shadow-inner shadow-[#C07ABE] min-w-96 max-w-[31.5rem]'>
             <div className='flex justify-center items-center self-center h-full w-24 text-[1.38rem] text-[#C07ABE]'>Tools</div>
 
             <div className='flex  items-center border-l-2 border-[#C07ABE] w-full flex-wrap'>
-            <span className=' flex justify-center items-center px-2 rounded-lg shadow-c2-purple h-7  text-[#C07ABE] m-3'>HTML</span>
-            <span className=' flex justify-center items-center px-2 rounded-lg shadow-c2-purple h-7  text-[#C07ABE] m-3'>CSS</span>
-            <span className=' flex justify-center items-center px-2 rounded-lg shadow-c2-purple h-7  text-[#C07ABE] m-3'>JS</span>
-            <span className=' flex justify-center items-center px-2 rounded-lg shadow-c2-purple h-7  text-[#C07ABE] m-3'>React</span>
-            <span className=' flex justify-center items-center px-2 rounded-lg shadow-c2-purple h-7  text-[#C07ABE] m-3'>NODE</span>
+            <span className=' flex justify-center items-center px-2 rounded-lg shadow-c2-purple h-7  text-[#C07ABE] m-3'><p className='text-[70%]'>{'</>'}</p>HTML</span>
+            <span className=' flex justify-center items-center px-2 rounded-lg shadow-c2-purple h-7  text-[#C07ABE] m-3'><p className='text-[70%]'>{'</>'}</p>CSS</span>
+            <span className=' flex justify-center items-center px-2 rounded-lg shadow-c2-purple h-7  text-[#C07ABE] m-3'><p className='text-[70%]'>{'</>'}</p>JS</span>
+            <span className=' flex justify-center items-center px-2 rounded-lg shadow-c2-purple h-7  text-[#C07ABE] m-3'><p className='text-[70%]'>{'</>'}</p>React</span>
+            <span className=' flex justify-center items-center px-2 rounded-lg shadow-c2-purple h-7  text-[#C07ABE] m-3'><p className='text-[70%]'>{'</>'}</p>NODE</span>
+            <span className=' flex justify-center items-center px-2 rounded-lg shadow-c2-purple h-7  text-[#C07ABE] m-3'><p className='text-[70%]'>{'</>'}</p>Tailwind</span>
 
             </div>
           </div>
