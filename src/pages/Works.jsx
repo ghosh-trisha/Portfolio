@@ -10,13 +10,13 @@ import styled from "styled-components";
 
 const ImgContainer = styled.div`
   perspective: 800px;
-  @media(min-width: 1200px){
+  @media(min-width: 1000px){
    width: 37rem;
   }
 `
 
 const ImgLeft=styled.img`
-  @media(min-width: 1200px){
+  @media(min-width: 1000px){
     
     transform:rotateX(4deg) rotateY(29deg) rotateZ(-2deg) translateY(2rem);
 
@@ -63,7 +63,7 @@ function Works() {
 
       <div className="flex flex-col justify-center items-center bg-[#303030] pb-24 mt-24 pl-20 pr-5">
 
-        <div className='flex flex-row justify-around items-center  mt-20 w-full mx-10'>
+        <div className='flex flex-row justify-around items-center  mt-20 w-full mx-10 max-lg:flex-wrap'>
         {/* <Link><Tilt className="Tilt w-20 h-20 bg-[#774069] rounded-[20%] flex justify-center items-center text-[#FFFDD0] text-xl font-me hover:sw ml-0 shadow-c-purple" options={defaultOptions} style={{ height: 250, width: 250 }}>
         <div className='text-9xl'>🙂</div>
         </Tilt></Link> */}
@@ -73,7 +73,7 @@ function Works() {
           <ImgContainer className="flex justify-center items-center">
           <ImgLeft
             src={"/images/work/portfolio.png"}
-            className="w-[33.5rem] lg:hover:w-[40rem] duration-[800ms] border-8 border-lime-700"
+            className="w-[33.5rem] lg:hover:w-[40rem] duration-[800ms] lg:shadow-c-img-card-purple lg:hover:shadow-c-img-card-purple-hover max-lg:shadow-c-img-card rounded-lg transition-all"
             alt="project pic"
           />
           </ImgContainer>
