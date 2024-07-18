@@ -32,7 +32,7 @@ const ImgRight=styled.img`
     transform:rotateX(4deg) rotateY(-29deg) rotateZ(2deg) translateY(-2rem);
 
     &:hover{
-    transform:rotateX(4deg) rotateY(30deg) rotateZ(-2deg) translateX(-2rem) translateY(1.5rem);
+    transform:rotateX(4deg) rotateY(30deg) rotateZ(-2deg) translateX(0rem) translateY(1.5rem);
   }
   }
 `
@@ -124,7 +124,7 @@ function Works() {
           <ImgContainer className="flex justify-center items-center">
           <ImgRight
             src={"/images/work/portfolio.png"}
-            className="w-[33.5rem] lg:hover:w-[40rem] duration-[800ms] lg:shadow-c-img-card-purple lg:hover:shadow-c-img-card-purple-hover max-lg:shadow-c-img-card rounded-lg transition-all"
+            className="w-[33.5rem] lg:hover:w-[40rem] duration-[800ms] lg:shadow-c-img-card-purple lg:hover:shadow-c-img-card-purple-hover-right-pic max-lg:shadow-c-img-card rounded-lg transition-all"
             alt="project pic"
           />
           </ImgContainer>
@@ -146,7 +146,7 @@ function Works() {
           <ImgContainer className="flex justify-center items-center">
           <ImgLeft
             src={"/images/work/portfolio.png"}
-            className="w-[33.5rem] lg:hover:w-[40rem] duration-[800ms] lg:shadow-c-img-card-purple lg:hover:shadow-c-img-card-purple-hover max-lg:shadow-c-img-card rounded-lg transition-all"
+            className="w-[33.5rem] lg:hover:w-[40rem] duration-[800ms] lg:shadow-c-img-card-purple lg:hover:shadow-c-img-card-purple-hover-left-pic max-lg:shadow-c-img-card rounded-lg transition-all"
             alt="project pic"
           />
           </ImgContainer>
