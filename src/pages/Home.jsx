@@ -31,20 +31,6 @@ function Home() {
               />
             </Draggable>
 
-            <Draggable>
-              <img
-                src={"/images/home/mongo.png"}
-                className="w-20 absolute left-[0%] top-20 rotate-12 hover:drop-shadow-c-purple duration-200 cursor-pointer z-40"
-                onDoubleClick={() => {
-                  window
-                    .open("https://www.w3schools.com/mongodb/", "_blank")
-                    .focus();
-                }}
-                draggable={false}
-                alt=""
-              />
-            </Draggable>
-
       
 
              <Draggable>
@@ -77,39 +63,11 @@ function Home() {
 
             <Draggable>
               <img
-                src={"/images/home/node.png"}
-                className="w-40 absolute left-[36rem] bottom-16 -rotate-12 hover:drop-shadow-c-purple duration-200 cursor-pointer z-40"
-                onDoubleClick={() => {
-                  window
-                    .open("https://nodejs.org/docs/latest/api/", "_blank")
-                    .focus();
-                }}
-                draggable={false}
-                alt=""
-              />
-            </Draggable>
-
-            <Draggable>
-              <img
                 src={"/images/home/java.png"}
                 className="w-16 absolute right-[45%] top-[3rem] -rotate-6 hover:drop-shadow-c-purple duration-200 cursor-pointer z-40"
                 onDoubleClick={() => {
                   window
                     .open("https://www.w3schools.com/java/", "_blank")
-                    .focus();
-                }}
-                draggable={false}
-                alt=""
-              />
-           </Draggable> 
-
-           <Draggable>
-              <img
-                src={"/images/home/js.png"}
-                className="w-12 absolute right-0 bottom-6 rotate-6 hover:drop-shadow-c-purple duration-200 cursor-pointer z-40" 
-                onDoubleClick={() => {
-                  window
-                    .open("https://bimandas.notion.site/JavaScript-f064011bb98b4283b511ed955289f118", "_blank")
                     .focus();
                 }}
                 draggable={false}
