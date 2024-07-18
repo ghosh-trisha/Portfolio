@@ -21,14 +21,17 @@ export default {
         'custom-light': '2px 2px 4px rgba(0, 0, 0, 0.5)',
         'custom-dark': '4px 4px 6px rgba(0, 0, 0, 0.4)',
         'custom-color': '3px 3px 5px rgba(255, 0, 0, 0.3)',
+        'c2-purple' : '2px 2px 5px #C07ABE'
       },
       boxShadow: {
         // "c-purple":'0 0 20px #774069',
         "c-purple":'0 0 30px #FFFDD0',
         'c-gray': '-7px 33px 60px 10px #FFFDD0',
+        'c2-purple' : '0px 0px 5px 1px #C07ABE'
       },
       dropShadow:{
         "c-purple":'0 0 15px #FFFDD0',
+        'c2-purple' : '2px 2px 5px #C07ABE',
       }
     },
   },
