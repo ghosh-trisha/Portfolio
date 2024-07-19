@@ -11,7 +11,7 @@ const GsapTest = () => {
         const handleWindowMouseMove = (event) => {
             setGlobalCoords({
                 x: event.clientX,
-                y: event.screenY,
+                y: event.screenY, 
             });
         };
         window.addEventListener('mousemove', handleWindowMouseMove);
@@ -103,35 +103,14 @@ const GsapTest = () => {
             yPercent: newCodes.y,
         });
     }, [globalCoords]);
-    return (
-        <MainSection>
-            {/* <div>
-                <ul>
-                    <li>Width: <strong>{screenSize.dynamicWidth}</strong></li>
-                    <li>Height: <strong>{screenSize.dynamicHeight}</strong></li>
-                </ul>
-                <h2>
-                    Global coords: {globalCoords.x} {globalCoords.y}
-                </h2>
-            </div> */}
-            {/* <div style={{
-                transform: `translate(${newCodes.x}%, ${newCodes.y}%)`,
-                position: 'absolute',
-                borderRadius: '50%',
-                width: '50px',
-                height: '50px',
-                margin: '0px auto',
-                top: '50%',
-                left: '50%',
-                background: 'red',
-            }}
-            > </div> */}
+    return(
+        <MainDiv>
             <div style={{
-                width: '90%',
-                height: '90%',
+                width: '100%',
+               
                 // margin: '0 auto auto auto', 
-                position:'relative',
-                bottom:"-4rem"
+                // position:'relative',
+                // bottom:"-4rem"
             }}   >
                 <svg
                     viewBox="0 10 211.73 180"
@@ -309,17 +288,20 @@ const GsapTest = () => {
                     </g>
                 </svg>
             </div>
-        </MainSection >
+            </MainDiv>
+        // </MainSection >
     )
 }
 
 export default GsapTest
-const MainSection = styled.section`
-    width:100%;
-    height:100%;
-
+const MainDiv = styled.div`
+    display:flex;
+    justify:center;
+    align-items:center;
+    padding:0;
+    margin:0;
+    width:90%;
     @media(max-width : 1024px){
-        width:50%; 
-        height:50%; 
+        width:70%;
     }
 `

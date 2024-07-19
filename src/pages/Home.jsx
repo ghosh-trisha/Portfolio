@@ -13,7 +13,7 @@ import Draggable from 'react-draggable';
 function Home() {
   return (
     <>
-      <div className="bg-[#774069] h-screen w-screen px-20 fixed pb-0 z-10">
+      <div className="bg-[#774069] h-screen w-screen md:px-20 max-md:px-10 fixed pb-0 z-10">
 
         <div className='z-30 bg-transparent max-lg:hidden'>
 
@@ -89,7 +89,7 @@ function Home() {
            </Draggable> 
         </div>
 
-        <div className="bg-[#303030] min-h-[85%] w-full md:h-auto flex flex-col flex-wrap md:flex-row rounded-b-lg z-20">
+        <div className="bg-[#303030] min-h-[85%] w-full md:h-auto flex  flex-wrap flex-row rounded-b-lg z-20">
          
           <div className="basis-full relative lg:basis-1/2 bg-[#303030] p-4 lg:p-0 max-lg:flex max-lg:justify-center max-lg:items-center flex-col ">
             {/* text */}
@@ -102,7 +102,7 @@ function Home() {
             <Avatar className='absolute z-20' />
 
 
-            <Link to={"/works"}>
+            {/* <Link to={"/works"}>
             <div className='bg-transparent h-[10%] w-[16.5%] absolute top-[18%] left-[85%] hover:left-[86%] duration-200 rounded-[15%] flex justify-center items-center text-center text-2xl font-me font-bold text-[#FFFDD0]'>
               <HiOutlineDesktopComputer />
               Works /{">"}
@@ -131,7 +131,7 @@ function Home() {
               <BsInfoCircle />
               Self /{">"}
             </div>
-            </Link>
+            </Link> */}
             
           </div>
 
