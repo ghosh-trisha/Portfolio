@@ -36,7 +36,9 @@ export default {
       dropShadow:{
         "c-purple":'0 0 15px #FFFDD0',
         'c2-purple' : '2px 2px 5px #C07ABE',
-      }
+        // 'c-gray' : '2px 2px 8px #0f172a' 
+        'c-gray' : '2px 2px 8px #020617'
+      },
     },
   },
   plugins: [],

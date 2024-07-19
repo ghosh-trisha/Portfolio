@@ -20,7 +20,7 @@ function Home() {
         <Draggable>
           <img
             src={"/images/home/git.png"}
-            className="w-14 absolute left-[3rem] top-[24.5rem] -rotate-6 hover:drop-shadow-c-purple duration-200 cursor-pointer z-40 "
+            className="w-14 absolute left-[7.28rem] top-[25rem] -rotate-6 hover:drop-shadow-c-gray duration-200 cursor-pointer z-40 "
             onDoubleClick={() => {
               window
                 .open("https://github.com/", "_blank")
@@ -34,7 +34,7 @@ function Home() {
           <Draggable >
               <img
                 src={"/images/home/react.png"}
-                className="w-16 absolute right-0 top-5  hover:drop-shadow-c-purple duration-200 cursor-pointer z-40"
+                className="w-16 absolute right-[49.5rem] top-[20.87rem]  hover:drop-shadow-c-gray duration-200 cursor-pointer z-40"
                 onDoubleClick={() => {
                   window
                     .open("https://react.dev/reference/react", "_blank")
@@ -49,7 +49,7 @@ function Home() {
              <Draggable>
               <img
                 src={"/images/home/sql.png"}
-                className="w-20 absolute right-[24%] top-16 -rotate-6 hover:drop-shadow-c-purple duration-200 cursor-pointer z-40"
+                className="w-20 absolute right-[11rem] top-[28.5rem] -rotate-6 hover:drop-shadow-c-gray duration-200 cursor-pointer z-40"
                 onDoubleClick={() => {
                   window
                     .open("https://www.w3schools.com/sql/", "_blank")
@@ -63,7 +63,7 @@ function Home() {
             <Draggable>
               <img
                 src={"/images/home/java.png"}
-                className="w-16 absolute right-[45%] top-[3rem] -rotate-6 hover:drop-shadow-c-purple duration-200 cursor-pointer z-40"
+                className="w-16 absolute right-[19.1rem] top-[1.1rem] -rotate-6 hover:drop-shadow-c-gray duration-200 cursor-pointer z-40"
                 onDoubleClick={() => {
                   window
                     .open("https://www.w3schools.com/java/", "_blank")
@@ -77,7 +77,7 @@ function Home() {
            <Draggable >
               <img
                 src={"/images/home/dsa.png"}
-                className="w-24 absolute left-0 top-[50%] rotate-45 hover:drop-shadow-c-purple duration-200 cursor-pointer z-40"
+                className="w-24 absolute right-[38.5rem] top-[3.9rem] rotate-45 hover:drop-shadow-c-gray duration-200 cursor-pointer z-40"
                 onDoubleClick={() => {
                   window
                     .open("https://leetcode.com/studyplan/top-interview-150/", "_blank")
