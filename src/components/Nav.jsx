@@ -10,6 +10,17 @@ import { LuBrainCircuit } from "react-icons/lu";
 import { BsFileEarmarkPerson } from "react-icons/bs";
 import { BsInfoCircle } from "react-icons/bs";
 import { FaHome } from "react-icons/fa";
+import styled from 'styled-components'
+
+
+const HoverImage = styled.img`
+  width: 4rem;
+  src: url('/images/icon1.png');
+
+  &:hover {
+    src: url('/images/icon2.png');
+  }
+`;
 
 
 function Nav() {
@@ -18,12 +29,26 @@ function Nav() {
   return (
     <header className=" md:px-24 md:flex md:items-center md:justify-between p-4 pb-0  md:pb-4 bg-[#774069] border-[#774069] border-b-4 fixed w-screen top-0 h-[4.3rem] z-50 ">
       <div className="flex items-center justify-between mb-4 md:mb-0">
-        <h1 className="leading-none text-2xl text-grey-darkest">
+        {/* <h1 className="leading-none text-2xl text-grey-darkest">
           <Link className="no-underline text-grey-darkest hover:text-black text-[#FFFDD0]" to="/">
            <span className=" text-6xl font-[800] font-sm">T</span>
            <span className="font-playfr text-xl font-sm">risha</span>
           </Link>
+        </h1> */}
+        <h1>
+          <Link to={'/'}>
+          <img
+            src={"/images/icon2.png"}
+            className='w-16'
+            alt=""
+          />
+          </Link>
         </h1>
+        {/* <h1>
+         <Link to={'/'}>
+         <HoverImage alt="" />
+         </Link>
+        </h1> */}
 
         <div
           className="text-black hover:text-orange md:hidden cursor-pointer text-2xl"
