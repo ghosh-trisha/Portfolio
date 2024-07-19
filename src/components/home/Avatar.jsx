@@ -318,8 +318,8 @@ const MainSection = styled.section`
     width:100%;
     height:100%;
 
-    @media(max-width : 1000px){
-        width:50%;
-        height:50%;
+    @media(max-width : 1024px){
+        width:50%; 
+        height:50%; 
     }
 `
