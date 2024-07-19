@@ -51,7 +51,7 @@ function Nav() {
          <img
             src={src}
             alt=""
-            className="w-12"
+            className="w-12 hover:scale-[1.2] duration-200"
             onMouseEnter={handleMouseOver}
             onMouseLeave={handleMouseOut}
          />
