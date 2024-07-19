@@ -26,7 +26,13 @@ function Nav() {
 
   const handleMouseOut = () => {
    setSrc("/images/icon1.png");
-  };
+  }
+
+  const handleMainMenu = (e) => {
+
+    e.target.classList.add("scale-[1.2]");
+    e.target.classList.add("text-black");
+  }
 
   return (
     <header className=" md:px-24 md:flex md:items-center md:justify-between p-4 pb-0  md:pb-4 bg-[#774069] border-[#774069] border-b-4 fixed w-screen top-0 h-[4.3rem] z-50 ">
@@ -80,7 +86,9 @@ function Nav() {
             <Link
               className="block no-underline hover:scale-[1.2] duration-200 py-2 text-grey-darkest hover:text-black md:border-none md:p-0 text-lg font-me text-[#FFFDD0] "
               to="/works">
-              <span className="flex flex-row justify-center items-center">
+              <span className="flex flex-row justify-center items-center mainMenu"
+                onClick={(e)=>{handleMainMenu(e)}}
+              >
               <HiOutlineDesktopComputer className="mr-[0.2rem]"/>
               Works/{">"} 
               </span>
@@ -90,7 +98,8 @@ function Nav() {
             <Link
               className="border-t block no-underline hover:scale-[1.2] duration-200 py-2 text-grey-darkest hover:text-black md:border-none md:p-0 text-lg font-me text-[#FFFDD0]"
               to="/skills">
-                <span className="flex flex-row justify-center items-center">
+                <span className="flex flex-row justify-center items-center mainMenu"
+                  onClick={(e)=>{handleMainMenu(e)}}>
                   <LuBrainCircuit className="mr-[0.2rem]"/>
                   Skills/{">"}
                 </span>
@@ -100,7 +109,8 @@ function Nav() {
             <Link
               className="border-t block no-underline hover:scale-[1.2] duration-200 py-2 text-grey-darkest hover:text-black md:border-none md:p-0 text-lg font-me text-[#FFFDD0]"
               to="/resume">
-              <span className="flex flex-row justify-center items-center">
+              <span className="flex flex-row justify-center items-center mainMenu"
+                onClick={(e)=>{handleMainMenu(e)}}>
                 <BsFileEarmarkPerson className="mr-[0.2rem]"/>
                 Resume/{">"}
               </span>
@@ -110,7 +120,8 @@ function Nav() {
             <Link
               class="border-t block no-underline hover:scale-[1.2] duration-200 py-2 text-grey-darkest hover:text-black md:border-none md:p-0 text-lg font-me text-[#FFFDD0]"
               to="/self">
-              <span className="flex flex-row justify-center items-center">
+              <span className="flex flex-row justify-center items-center mainMenu"
+                onClick={(e)=>{handleMainMenu(e)}}>
                 <BsInfoCircle className="mr-[0.2rem]"/>
                 Self/{">"}
               </span>
