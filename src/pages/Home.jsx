@@ -13,9 +13,9 @@ import Draggable from 'react-draggable';
 function Home() {
   return (
     <>
-      <div className="bg-[#774069] h-screen w-screen px-0  md:px-20 fixed pb-0 z-10">
+      <div className="bg-[#774069] h-screen w-screen px-20 fixed pb-0 z-10">
 
-        {/* <div className='z-30 bg-transparent'>
+        <div className='z-30 bg-transparent'>
 
         <Draggable>
           <img
@@ -87,17 +87,17 @@ function Home() {
                 alt=""
               />
            </Draggable> 
-        </div> */}
+        </div>
 
         <div className="bg-[#303030] min-h-[85%] w-full md:h-auto flex flex-col flex-wrap md:flex-row rounded-b-lg z-20">
          
-          <div className="basis-full relative lg:basis-1/2 bg-[#303030] p-4 lg:p-0 max-lg:flex max-lg:justify-center max-lg:items-center flex-col bg-lime-700">
+          <div className="basis-full relative lg:basis-1/2 bg-[#303030] p-4 lg:p-0 max-lg:flex max-lg:justify-center max-lg:items-center flex-col ">
             {/* text */}
             <Text />
 
           </div>
 
-          <div className="basis-full md:basis-1/2 bg-[#303030]   ">
+          <div className="basis-full lg:basis-1/2 bg-[#303030] flex max-lg:justify-center max-lg:items-center max-lg:translate-y-0">
             {/* avatar */}
             <Avatar className='absolute z-20' />
 
