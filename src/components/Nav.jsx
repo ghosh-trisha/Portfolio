@@ -13,20 +13,21 @@ import { FaHome } from "react-icons/fa";
 import styled from 'styled-components'
 
 
-const [src, setSrc] = useState("/images/icon1.png");
-
-const handleMouseOver = () => {
-  setSrc("/images/icon2.png");
-};
-
-const handleMouseOut = () => {
-  setSrc("/images/icon1.png");
-};
-
-
 function Nav() {
+
   const [menu, setMenu] = useState(true);
   const menuRef = useRef();
+
+  const [src, setSrc] = useState("/images/icon1.png");
+
+  const handleMouseOver = () => {
+   setSrc("/images/icon2.png");
+  };
+
+  const handleMouseOut = () => {
+   setSrc("/images/icon1.png");
+  };
+
   return (
     <header className=" md:px-24 md:flex md:items-center md:justify-between p-4 pb-0  md:pb-4 bg-[#774069] border-[#774069] border-b-4 fixed w-screen top-0 h-[4.3rem] z-50 ">
       <div className="flex items-center justify-between mb-4 md:mb-0">
@@ -50,8 +51,9 @@ function Nav() {
          <img
             src={src}
             alt=""
-            onMouseOver={handleMouseOver}
-            onMouseOut={handleMouseOut}
+            className="w-12"
+            onMouseEnter={handleMouseOver}
+            onMouseLeave={handleMouseOut}
          />
          </Link>
         </h1>
