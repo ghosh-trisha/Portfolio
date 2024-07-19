@@ -13,14 +13,15 @@ import { FaHome } from "react-icons/fa";
 import styled from 'styled-components'
 
 
-const HoverImage = styled.img`
-  width: 4rem;
-  src: url('/images/icon1.png');
+const [src, setSrc] = useState("/images/icon1.png");
 
-  &:hover {
-    src: url('/images/icon2.png');
-  }
-`;
+const handleMouseOver = () => {
+  setSrc("/images/icon2.png");
+};
+
+const handleMouseOut = () => {
+  setSrc("/images/icon1.png");
+};
 
 
 function Nav() {
@@ -35,7 +36,7 @@ function Nav() {
            <span className="font-playfr text-xl font-sm">risha</span>
           </Link>
         </h1> */}
-        <h1>
+        {/* <h1>
           <Link to={'/'}>
           <img
             src={"/images/icon2.png"}
@@ -43,12 +44,17 @@ function Nav() {
             alt=""
           />
           </Link>
-        </h1>
-        {/* <h1>
-         <Link to={'/'}>
-         <HoverImage alt="" />
-         </Link>
         </h1> */}
+        <h1>
+         <Link to={'/'}>
+         <img
+            src={src}
+            alt=""
+            onMouseOver={handleMouseOver}
+            onMouseOut={handleMouseOut}
+         />
+         </Link>
+        </h1>
 
         <div
           className="text-black hover:text-orange md:hidden cursor-pointer text-2xl"
