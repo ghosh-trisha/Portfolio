@@ -78,7 +78,7 @@ function Nav() {
         <ul className="list-reset md:flex md:items-center">
           <li className="md:ml-6">                   
             <Link
-              className="block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0 text-lg font-me text-[#FFFDD0] "
+              className="block no-underline hover:scale-[1.2] duration-200 py-2 text-grey-darkest hover:text-black md:border-none md:p-0 text-lg font-me text-[#FFFDD0] "
               to="/works">
               <span className="flex flex-row justify-center items-center">
               <HiOutlineDesktopComputer className="mr-[0.2rem]"/>
@@ -88,7 +88,7 @@ function Nav() {
           </li>
           <li className="md:ml-6">
             <Link
-              className="border-t block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0 text-lg font-me text-[#FFFDD0]"
+              className="border-t block no-underline hover:scale-[1.2] duration-200 py-2 text-grey-darkest hover:text-black md:border-none md:p-0 text-lg font-me text-[#FFFDD0]"
               to="/skills">
                 <span className="flex flex-row justify-center items-center">
                   <LuBrainCircuit className="mr-[0.2rem]"/>
@@ -98,7 +98,7 @@ function Nav() {
           </li>
           <li className="md:ml-6">
             <Link
-              className="border-t block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0 text-lg font-me text-[#FFFDD0]"
+              className="border-t block no-underline hover:scale-[1.2] duration-200 py-2 text-grey-darkest hover:text-black md:border-none md:p-0 text-lg font-me text-[#FFFDD0]"
               to="/resume">
               <span className="flex flex-row justify-center items-center">
                 <BsFileEarmarkPerson className="mr-[0.2rem]"/>
@@ -108,7 +108,7 @@ function Nav() {
           </li>
           <li className="md:ml-6">
             <Link
-              class="border-t block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0 text-lg font-me text-[#FFFDD0]"
+              class="border-t block no-underline hover:scale-[1.2] duration-200 py-2 text-grey-darkest hover:text-black md:border-none md:p-0 text-lg font-me text-[#FFFDD0]"
               to="/self">
               <span className="flex flex-row justify-center items-center">
                 <BsInfoCircle className="mr-[0.2rem]"/>
