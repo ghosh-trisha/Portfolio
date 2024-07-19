@@ -39,7 +39,7 @@ function Nav() {
           <Link to={'/'}>
           <img
             src={"/images/icon2.png"}
-            className='w-16'
+            className='w-12'
             alt=""
           />
           </Link>
