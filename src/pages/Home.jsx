@@ -21,9 +21,11 @@ function Home() {
 
   return (
     <>
-      <div className="bg-[#774069] h-screen w-screen px-20 fixed pb-0 z-10">
+      {/* whole screen div */}
+      <div className="bg-[#774069] h-screen w-screen max-lg:px-5 px-20 fixed pb-0 z-10">
 
-        <div className='z-30 bg-transparent max-lg:hidden'>
+        {/* dragable icons div */}
+        <div className='z-30 bg-transparent max-xl:hidden'>
 
         <Draggable>
           <img
@@ -97,57 +99,123 @@ function Home() {
            </Draggable> 
         </div>
 
-        <div className="bg-[#303030] min-h-[85%] w-full md:h-auto flex flex-col flex-wrap md:flex-row rounded-b-lg z-20">
+        {/* black portion div */}
+        <div className="bg-[#303030] lg:h-[85%] md:h-[93%] sm:h-[86%] max-sm:h-[89.3%] w-full flex flex-wrap flex-row rounded-b-lg z-20 overflow-hidden">
          
-          <div className="basis-full relative lg:basis-1/2 bg-[#303030] p-4 lg:p-0 max-lg:flex max-lg:justify-center max-lg:items-center flex-col ">
+          {/* text (hi, trisha, paragraph) div */}
+          <div className="basis-full relative lg:basis-1/2 bg-[#303030] p-4 lg:p-0 max-lg:flex max-lg:justify-center max-lg:items-center flex-col">
             {/* text */}
             <Text />
 
           </div>
 
-          <div className="basis-full lg:basis-1/2 bg-[#303030] flex max-lg:justify-center max-lg:items-center max-lg:translate-y-0">
+          {/* namaste div */}
+          <div className='text-[#FFFDD0] text-7xl font-co font-extrabold lg:bottom-[4.5rem] max-md:bottom-[3.2rem] max-lg:bottom-[0.8rem] max-sm:bottom-[2rem] max-sm:left-[5rem] left-[26%] fixed'><ControllCursorFollower>Namaste !</ControllCursorFollower></div>
+
+          {/* avatar div */}
+          <div className="basis-full lg:basis-1/2 flex max-lg:justify-center max-lg:items-center max-lg:translate-y-0">
             {/* avatar */}
             <Avatar className='absolute z-20' />
+          </div>
 
+          {/* work, skill, resume, self div */}
+          <div>
+
+            {/* work  */}
             <ControllCursorFollower>
             <Link to={"/works"}>
-            <div className='bg-transparent h-[10%] w-[16.5%] absolute top-[18%] left-[85%] hover:left-[86%] duration-200 rounded-[15%] flex justify-center items-center text-center text-2xl font-me font-bold text-[#FFFDD0]'>
-              <HiOutlineDesktopComputer />
+            <div className='bg-transparent absolute 
+
+            lg:h-[10%] lg:w-[16.5%]
+            lg:top-[18%] lg:left-[85%] lg:hover:left-[86%]
+            lg:text-2xl font-bold
+
+            md:h-[2%] md:w-[10%]
+            md:top-[40%] md:right-[10%] md:hover:right-[7%] 
+
+            sm:top-[40%] sm:right-[10%] sm:hover:right-[7%] 
+
+            max-sm:top-[49%] max-sm:right-[10%] max-sm:hover:right-[7%] 
+            
+            duration-200 rounded-[15%] flex justify-center items-center text-center font-me  text-[#FFFDD0]'>
+              <span className='max-lg:hidden'><HiOutlineDesktopComputer /></span>
               Works /{">"}
             </div >
             </Link>
             </ControllCursorFollower>
             
 
+            {/* skill  */}
             <ControllCursorFollower>
             <Link to={"/skills"}>
-            <div className='bg-transparent h-[10%] w-[16.5%] absolute top-[33%] left-[85%] hover:left-[86%] duration-200 rounded-[14%] flex justify-center items-center text-center text-2xl font-me font-bold text-[#FFFDD0]'>
-              <LuBrainCircuit />
+            <div className='bg-transparent absolute 
+
+            lg:h-[10%] lg:w-[16.5%]
+            lg:top-[33%] lg:left-[85%] lg:hover:left-[86%]
+            lg:text-2xl font-bold
+
+            md:h-[2%] md:w-[10%]
+            md:top-[50%] md:right-[10%] md:hover:right-[7%] 
+
+            sm:top-[47%] sm:right-[11%] sm:hover:right-[7%]
+            
+            max-sm:top-[54%] max-sm:right-[11.5%] max-sm:hover:right-[7%] 
+            
+            duration-200 rounded-[15%] flex justify-center items-center text-center font-me  text-[#FFFDD0]' >
+              <span className='max-lg:hidden'><LuBrainCircuit /></span>
               Skills /{">"}
             </div>
             </Link>
             </ControllCursorFollower>
 
 
+            {/* resume  */}
             <ControllCursorFollower>
             <Link to={"/resume"}>
-            <div className='bg-transparent h-[10%] w-[16.5%] absolute top-[48%] left-[85%] hover:left-[86%] duration-200 rounded-[15%] flex justify-center items-center text-center text-2xl font-me font-bold text-[#FFFDD0]'>
-              <BsFileEarmarkPerson />
+            <div className='bg-transparent absolute 
+
+            lg:h-[10%] lg:w-[16.5%]
+            lg:top-[48%] lg:left-[85%] lg:hover:left-[86%]
+            lg:text-2xl font-bold
+
+            md:h-[2%] md:w-[11%]
+            md:top-[60%] md:right-[8.5%] md:hover:right-[7%] 
+            
+            sm:top-[54%] sm:right-[8%] sm:hover:right-[7%]
+            
+            max-sm:top-[59%] max-sm:right-[8%] max-sm:hover:right-[5%] 
+            
+            duration-200 rounded-[15%] flex justify-center items-center text-center font-me  text-[#FFFDD0]'>
+              <span className='max-lg:hidden'><BsFileEarmarkPerson /></span>
               Resume /{">"}
             </div>
             </Link>
             </ControllCursorFollower>
 
 
+            {/* self  */}
             <ControllCursorFollower>
             <Link to={"/self"}>
-            <div className='bg-transparent h-[10%] w-[16.5%] absolute top-[63%] left-[85%] hover:left-[86%] duration-200 rounded-[15%] flex justify-center items-center text-center text-2xl font-me font-bold text-[#FFFDD0]'>
-              <BsInfoCircle />
+            <div className='bg-transparent absolute 
+
+            lg:h-[10%] lg:w-[16.5%]
+            lg:top-[63%] lg:left-[85%] lg:hover:left-[86%]
+            lg:text-2xl font-bold
+
+            md:h-[2%] md:w-[11%]
+            md:top-[70%] md:right-[10%] md:hover:right-[7%] 
+
+            sm:top-[61%] sm:right-[12.5%] sm:hover:right-[7%] 
+
+            max-sm:top-[64%] max-sm:right-[14%] max-sm:hover:right-[10%] 
+            
+            duration-200 rounded-[15%] flex justify-center items-center text-center font-me  text-[#FFFDD0]'>
+              <span className='max-lg:hidden'><BsInfoCircle /></span>
               Self /{">"}
             </div>
             </Link>
             </ControllCursorFollower>
-            
+
           </div>
 
         </div>

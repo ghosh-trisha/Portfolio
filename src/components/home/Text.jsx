@@ -15,7 +15,7 @@ function Text() {
 
       <div className='text-[#FFFDD0] relative h-54 lg:top-[15%] lg:left-[14%]  lg:w-[60%] max-lg:px-5 font-w font-[400]'><span className="font-[800] text-[#FFFDD0] text-[109%]">a third-year Computer Science Engineering</span> student passionate about technology & innovation and also great at making new software and websites. Work well in teams, & also good at solving problems. Transform ideas into reality. Crafting innovative solutions through code. Can easily learn new things & change to fit different situations.</div>
 
-      <div className='text-[#FFFDD0] text-7xl font-co font-extrabold absolute bottom-[-1.5rem] left-[26%] fixed'><ControllCursorFollower>Namaste !</ControllCursorFollower></div>
+      
     </> 
   )
 }

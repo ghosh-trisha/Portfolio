@@ -104,7 +104,7 @@ const GsapTest = () => {
         });
     }, [globalCoords]);
     return (
-        <MainSection>
+        <MainSection className='lg:translate-y-10 md:translate-y-[-2.5rem] sm:translate-y-[-2rem] mb-20'>
             {/* <div>
                 <ul>
                     <li>Width: <strong>{screenSize.dynamicWidth}</strong></li>
@@ -126,12 +126,12 @@ const GsapTest = () => {
                 background: 'red',
             }}
             > </div> */}
-            <div style={{
-                width: '90%',
-                height: '90%',
+            <div className='' style={{
+                width: '100%',
+                // height: '90%',
                 // margin: '0 auto auto auto', 
                 position:'relative',
-                bottom:"-4rem"
+                // bottom:"-4rem"
             }}   >
                 <svg
                     viewBox="0 10 211.73 180"
@@ -314,11 +314,15 @@ const GsapTest = () => {
 }
 
 export default GsapTest
-const MainSection = styled.section`
-    width:100%;
-    height:100%;
 
-    @media(max-width : 1000px){
+const MainSection = styled.div`
+    width:90%;
+    height:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media(max-width : 1024px){
         width:50%;
         height:50%;
     }
