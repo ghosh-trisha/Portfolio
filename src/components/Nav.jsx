@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, useContext } from "react";
 import { RiMenu3Fill } from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
 import {Link , useLocation} from 'react-router-dom';
@@ -9,6 +9,8 @@ import { BsFileEarmarkPerson } from "react-icons/bs";
 import { BsInfoCircle } from "react-icons/bs";
 import { FaHome } from "react-icons/fa";
 import styled from 'styled-components'
+import ControllCursorFollower from '../components/ControllCursorFollower.jsx'
+import { CursorContext } from "./Context";
 
 
 function Nav() {
@@ -36,8 +38,12 @@ function Nav() {
   const isResume = ['/resume'].includes(location.pathname);
   const isSelf = ['/self'].includes(location.pathname);
 
+  const {setIsHovered} = useContext(CursorContext);
+
   useEffect( ()=>{
     
+    setIsHovered(8);
+
     showWork.current.classList.remove('text-black');
     showSkill.current.classList.remove('text-black');
     showResume.current.classList.remove('text-black');
@@ -77,6 +83,7 @@ function Nav() {
           </Link>
         </h1> */}
         <h1>
+          <ControllCursorFollower>
          <Link to={'/'}>
          <img
             src={src}
@@ -86,10 +93,11 @@ function Nav() {
             onMouseLeave={handleMouseOut} 
          />
          </Link>
+         </ControllCursorFollower>
         </h1>
 
         <div
-          className="text-black hover:text-orange md:hidden cursor-pointer text-2xl"
+          className="text-[#FFFDD0] hover:text-orange md:hidden cursor-pointer text-2xl"
           onClick={() => {
             setMenu((p) => !p);
             menuRef.current.classList.toggle("max-md:hidden");
@@ -106,7 +114,8 @@ function Nav() {
 
       <nav className="max-md:hidden transition-all duration-150" ref={menuRef}>
         <ul className="list-reset md:flex md:items-center">
-          <li className="md:ml-6">                   
+          <li className="md:ml-6">
+          <ControllCursorFollower>                   
             <Link
               className="block no-underline hover:scale-[1.2] duration-200 py-2 text-grey-darkest hover:text-black md:border-none md:p-0 text-lg font-me text-[#FFFDD0] "
               to="/works">
@@ -115,8 +124,10 @@ function Nav() {
               Works/{">"} 
               </span>
             </Link>
+            </ControllCursorFollower>
           </li>
           <li className="md:ml-6">
+          <ControllCursorFollower>
             <Link
               className="border-t block no-underline hover:scale-[1.2] duration-200 py-2 text-grey-darkest hover:text-black md:border-none md:p-0 text-lg font-me text-[#FFFDD0]"
               to="/skills">
@@ -125,8 +136,10 @@ function Nav() {
                   Skills/{">"}
                 </span>
             </Link>
+            </ControllCursorFollower>
           </li>
           <li className="md:ml-6">
+          <ControllCursorFollower>
             <Link
               className="border-t block no-underline hover:scale-[1.2] duration-200 py-2 text-grey-darkest hover:text-black md:border-none md:p-0 text-lg font-me text-[#FFFDD0]"
               to="/resume">
@@ -135,8 +148,10 @@ function Nav() {
                 Resume/{">"}
               </span>
             </Link>
+            </ControllCursorFollower>
           </li>
           <li className="md:ml-6">
+          <ControllCursorFollower>
             <Link
               class="border-t block no-underline hover:scale-[1.2] duration-200 py-2 text-grey-darkest hover:text-black md:border-none md:p-0 text-lg font-me text-[#FFFDD0]"
               to="/self">
@@ -145,6 +160,7 @@ function Nav() {
                 Self/{">"}
               </span>
             </Link>
+            </ControllCursorFollower>
           </li>
         </ul>
       </nav>

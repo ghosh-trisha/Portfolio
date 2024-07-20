@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext, useEffect} from 'react';
 import Avatar from "../components/home/Avatar.jsx";
 import Text from '../components/home/Text.jsx';
 import { HiOutlineDesktopComputer } from "react-icons/hi";
@@ -7,9 +7,18 @@ import { BsFileEarmarkPerson } from "react-icons/bs";
 import { BsInfoCircle } from "react-icons/bs";
 import {Link} from 'react-router-dom'
 import Draggable from 'react-draggable';
+import ControllCursorFollower from '../components/ControllCursorFollower.jsx';
+import { CursorContext } from '../components/Context.jsx';
 
 
 function Home() {
+
+  const {setIsHovered} = useContext(CursorContext);
+
+  useEffect( ()=>{
+    setIsHovered(8);
+  } , []);
+
   return (
     <>
       <div className="bg-[#774069] h-screen w-screen px-20 fixed pb-0 z-10">
@@ -100,37 +109,44 @@ function Home() {
             {/* avatar */}
             <Avatar className='absolute z-20' />
 
-
+            <ControllCursorFollower>
             <Link to={"/works"}>
             <div className='bg-transparent h-[10%] w-[16.5%] absolute top-[18%] left-[85%] hover:left-[86%] duration-200 rounded-[15%] flex justify-center items-center text-center text-2xl font-me font-bold text-[#FFFDD0]'>
               <HiOutlineDesktopComputer />
               Works /{">"}
             </div >
             </Link>
+            </ControllCursorFollower>
             
 
+            <ControllCursorFollower>
             <Link to={"/skills"}>
             <div className='bg-transparent h-[10%] w-[16.5%] absolute top-[33%] left-[85%] hover:left-[86%] duration-200 rounded-[14%] flex justify-center items-center text-center text-2xl font-me font-bold text-[#FFFDD0]'>
               <LuBrainCircuit />
               Skills /{">"}
             </div>
             </Link>
+            </ControllCursorFollower>
 
 
+            <ControllCursorFollower>
             <Link to={"/resume"}>
             <div className='bg-transparent h-[10%] w-[16.5%] absolute top-[48%] left-[85%] hover:left-[86%] duration-200 rounded-[15%] flex justify-center items-center text-center text-2xl font-me font-bold text-[#FFFDD0]'>
               <BsFileEarmarkPerson />
               Resume /{">"}
             </div>
             </Link>
+            </ControllCursorFollower>
 
 
+            <ControllCursorFollower>
             <Link to={"/self"}>
             <div className='bg-transparent h-[10%] w-[16.5%] absolute top-[63%] left-[85%] hover:left-[86%] duration-200 rounded-[15%] flex justify-center items-center text-center text-2xl font-me font-bold text-[#FFFDD0]'>
               <BsInfoCircle />
               Self /{">"}
             </div>
             </Link>
+            </ControllCursorFollower>
             
           </div>
 

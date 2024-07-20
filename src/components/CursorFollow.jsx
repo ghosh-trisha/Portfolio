@@ -1,13 +1,19 @@
 
 
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef, useContext } from 'react';
+import { CursorContext } from './Context';
+
 
 const CursorFollow = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [hovering, setHovering] = useState(false);
-  setInterval(() => {
-    // console.log(hovering)
-  }, 4000);
+  
+  const {hoveredValue} = useContext( CursorContext );
+  // console.log(hoveredValue);
+  
+  // setInterval(() => {
+  //   // console.log(hovering)
+  // }, 4000);
   useEffect(() => {
  
     
@@ -20,11 +26,11 @@ const CursorFollow = () => {
 
     window.addEventListener('mousemove', handleMouseMove);
     
-    const links = document.querySelectorAll('a, Link');
-    links.forEach(link => {
-      link.addEventListener('mouseenter', handleMouseEnter);
-      link.addEventListener('mouseleave', handleMouseLeave);
-    });
+    // const links = document.querySelectorAll('a, Link');
+    // links.forEach(link => {
+    //   link.addEventListener('mouseenter', handleMouseEnter);
+    //   link.addEventListener('mouseleave', handleMouseLeave);
+    // });
 
     // Select all elements that are not links
     // const elements = document.querySelectorAll('body *:not(a):not(Link)');
@@ -34,13 +40,13 @@ const CursorFollow = () => {
   
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
-      links.forEach(link => {
-        link.removeEventListener('mouseenter', handleMouseEnter);
-        link.removeEventListener('mouseleave', handleMouseLeave);
-      });
-    //   elements.forEach(ele => {
-    //     ele.removeEventListener('mouseenter', handleMouseLeave);
-    //   });
+      // links.forEach(link => {
+      //   link.removeEventListener('mouseenter', handleMouseEnter);
+      //   link.removeEventListener('mouseleave', handleMouseLeave);
+      // });
+      // elements.forEach(ele => {
+      //   ele.removeEventListener('mouseenter', handleMouseLeave);
+      // });
     };
   }, []);
 
@@ -71,10 +77,13 @@ const CursorFollow = () => {
   return (
     <>
       <div
-        className={`max-md:hidden pointer-events-none fixed transform -translate-x-1/2 -translate-y-1/2 z-[100] transition-all duration-0 ${hovering ? 'w-24 h-24' : 'w-8 h-8'}`}
+        className={`max-md:hidden pointer-events-none fixed transform -translate-x-1/2 -translate-y-1/2 z-[100] transition-all duration-0  }`}
         style={{
           left: `${position.x}px`,
           top: `${position.y}px`,
+          width: `${hoveredValue*0.25}rem`,
+          height:`${hoveredValue*0.25}rem`,
+          
         }}
         ref={cursorRef}
       >
