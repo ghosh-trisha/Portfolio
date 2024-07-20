@@ -62,19 +62,11 @@ function Works() {
 
   return (
     <>
-<<<<<<< HEAD
       <div className='min-h-screen w-screen bg-[#303030]'>
 
       
         <h1 className='flex justify-center items-center mt-16 pt-10 font-me text-5xl text-[#FBAC20]'>
           <h1 className='text-6xl text-[#C07ABE]'>{"< "}</h1>
-=======
-      <div className="min-h-screen w-screen bg-[#303030]">
-        <Nav />
-        <Social />
-        <h1 className="flex justify-center items-center mt-16 pt-10 font-me text-5xl text-[#FBAC20]">
-          <h1 className="text-6xl text-[#C07ABE]">{"< "}</h1>
->>>>>>> 7be9dfd8306cc8cd4d785185ed3a7256a4d9dd4b
           works
           <h1 className="text-8xl text-[#E8251C]">/</h1>
           <h1 className="text-6xl text-[#C07ABE]">{" >"}</h1>
