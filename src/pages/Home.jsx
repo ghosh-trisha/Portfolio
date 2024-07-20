@@ -110,7 +110,7 @@ function Home() {
           </div>
 
           {/* namaste div */}
-          <div className='text-[#FFFDD0] text-7xl max-sm:text-5xl font-co font-extrabold lg:bottom-[4.5rem] max-md:bottom-[3.2rem] max-lg:bottom-[0.8rem] max-sm:bottom-[2rem] max-sm:left-[5rem] left-[26%] fixed'><ControllCursorFollower>Namaste !</ControllCursorFollower></div>
+          <div className='text-[#FFFDD0] text-7xl max-sm:text-5xl font-co font-extrabold lg:bottom-[4.5rem] max-md:bottom-[3.2rem] max-lg:bottom-[0.8rem] max-sm:bottom-[2.5rem] max-sm:left-[5rem] left-[26%] fixed'><ControllCursorFollower>Namaste !</ControllCursorFollower></div>
 
           {/* avatar div */}
           <div className="basis-full lg:basis-1/2 flex max-lg:justify-center max-lg:items-center max-lg:translate-y-0">
