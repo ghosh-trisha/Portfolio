@@ -45,6 +45,11 @@ const CursorFollow = () => {
   }, []);
 
   const cursorRef = useRef();
+
+  useEffect( () => {
+    cursorRef.current.classList.add("hidden");
+  } , [] );
+  
   useEffect(() => {
     const handleMouseLeave = () => {
       cursorRef.current.classList.add("hidden");
@@ -66,7 +71,7 @@ const CursorFollow = () => {
   return (
     <>
       <div
-        className={`max-md:hidden hidden pointer-events-none fixed transform -translate-x-1/2 -translate-y-1/2 z-[100] transition-all duration-0 ${hovering ? 'w-24 h-24' : 'w-8 h-8'}`}
+        className={`max-md:hidden pointer-events-none fixed transform -translate-x-1/2 -translate-y-1/2 z-[100] transition-all duration-0 ${hovering ? 'w-24 h-24' : 'w-8 h-8'}`}
         style={{
           left: `${position.x}px`,
           top: `${position.y}px`,
