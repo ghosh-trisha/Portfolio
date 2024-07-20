@@ -33,15 +33,15 @@ export default function Resume() {
         </h1>
 
         <Suspense fallback={
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center h-full">
             <ColorRing
               visible={true}
-              height="80"
-              width="80"
+              height="85"
+              width="85"
               ariaLabel="color-ring-loading"
               wrapperStyle={{}}
               wrapperClass="color-ring-wrapper"
-              colors={['#C07ABE']}
+              colors={['#C07ABE' , '#C07ABE' , '#C07ABE' , '#C07ABE' , '#C07ABE']}
             />
           </div>
         }>
