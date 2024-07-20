@@ -54,8 +54,8 @@ const CursorFollow = () => {
         }}
       >
         <div className="relative flex items-center justify-center w-full h-full">
-          <div className={`absolute w-full h-full rounded-full border ${hovering ? 'border-2' : 'border'} border-lime-400`}></div>
-          <div className={`w-2 h-2 rounded-full bg-lime-400`}></div>
+          <div className={`absolute w-full h-full rounded-full border ${hovering ? 'border-2' : 'border'} border-[#00FFAB]`}></div>
+          <div className={`w-2 h-2 rounded-full bg-[#00FFAB]`}></div>
         </div>
       </div>
     </>

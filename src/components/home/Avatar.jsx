@@ -115,7 +115,7 @@ const GsapTest = () => {
                 </h2>
             </div> */}
             {/* <div style={{
-                transform: `translate(${newCodes.x}%, ${newCodes.y}%)`,
+                transform: translate(${newCodes.x}%, ${newCodes.y}%),
                 position: 'absolute',
                 borderRadius: '50%',
                 width: '50px',

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Avatar from "../components/home/Avatar.jsx";
 import Text from '../components/home/Text.jsx';
