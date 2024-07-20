@@ -6,7 +6,7 @@ import {Link} from "react-router-dom"
 
 function loadingResume() {
 
-    
+
   const viewer = useRef(null);
   useEffect(() => {
     CloudPdfViewer(
@@ -15,6 +15,7 @@ function loadingResume() {
         darkMode: true,
         disableToolbar: true,
         appBarColored: true,
+        themeColor: '#C07ABE'
       },
       viewer.current
     ).then((instance) => {});
@@ -23,9 +24,7 @@ function loadingResume() {
 
   return (
     <>
-    <div className="w-full h-screen  bg-[#303030] absolute top-0  ">
-
-      <div className="viewer w-full h-full mt-20 p-0" ref={viewer}></div>
+      <div className="viewer w-full h-full mt-2 p-0" ref={viewer}></div>
 
 
       <Link to="https://cloudpdf.io/download/cAT1kTG3M" >
@@ -33,8 +32,7 @@ function loadingResume() {
         <MdDownloadForOffline className="hover:drop-shadow-c-purple" />
       </div>
       </Link>
-
-    </div>
+      
     </>
   );
 }
