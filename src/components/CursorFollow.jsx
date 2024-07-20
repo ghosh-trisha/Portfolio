@@ -1,6 +1,6 @@
 
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 
 const CursorFollow = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -44,14 +44,34 @@ const CursorFollow = () => {
     };
   }, []);
 
+  const cursorRef = useRef();
+  useEffect(() => {
+    const handleMouseLeave = () => {
+      cursorRef.current.classList.add("hidden");
+    };
+    const handleMouseEnter = () => {
+      cursorRef.current.classList.remove("hidden");
+    };
+
+    window.document.addEventListener("mouseleave", handleMouseLeave);
+    window.document.addEventListener("mouseenter", handleMouseEnter);
+
+    return () => {
+      window.document.removeEventListener("mouseleave", handleMouseLeave);
+      window.document.removeEventListener("mouseenter", handleMouseEnter);
+    };
+  }, []);
+
+
   return (
     <>
       <div
-        className={`pointer-events-none fixed transform -translate-x-1/2 -translate-y-1/2 z-[100] transition-all duration-0 ${hovering ? 'w-24 h-24' : 'w-8 h-8'}`}
+        className={`max-md:hidden pointer-events-none fixed transform -translate-x-1/2 -translate-y-1/2 z-[100] transition-all duration-0 ${hovering ? 'w-24 h-24' : 'w-8 h-8'}`}
         style={{
           left: `${position.x}px`,
           top: `${position.y}px`,
         }}
+        ref={cursorRef}
       >
         <div className="relative flex items-center justify-center w-full h-full">
           <div className={`absolute w-full h-full rounded-full border ${hovering ? 'border-2' : 'border'} border-[#C07ABE]`}></div>
