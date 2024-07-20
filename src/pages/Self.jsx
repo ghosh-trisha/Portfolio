@@ -62,8 +62,6 @@ const handleLineLeave = () => {
       <div className='min-h-screen w-screen bg-[#303030] pb-10'>
 
 
-      <Nav />
-      <Social />
       <h1 className='w-screen flex justify-center items-center mt-14 pt-10 font-me text-5xl text-[#FBAC20]'>
         <h1 className='text-6xl text-[#C07ABE]'>{"< "}</h1>
         self 

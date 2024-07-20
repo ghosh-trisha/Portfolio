@@ -69,9 +69,7 @@ function Works() {
     <>
       <div className='min-h-screen w-screen bg-[#303030]'>
 
-
-        <Nav />
-        <Social />
+      
         <h1 className='flex justify-center items-center mt-16 pt-10 font-me text-5xl text-[#FBAC20]'>
           <h1 className='text-6xl text-[#C07ABE]'>{"< "}</h1>
           works

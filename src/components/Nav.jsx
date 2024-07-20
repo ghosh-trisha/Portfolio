@@ -1,9 +1,7 @@
-
-
 import React, { useRef, useEffect, useState } from "react";
 import { RiMenu3Fill } from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
-import {Link} from 'react-router-dom';
+import {Link , useLocation} from 'react-router-dom';
 
 import { HiOutlineDesktopComputer } from "react-icons/hi";
 import { LuBrainCircuit } from "react-icons/lu";
@@ -28,14 +26,40 @@ function Nav() {
    setSrc("/images/icon1.png");
   }
 
-  const handleMainMenu = (e) => {
+  const location = useLocation();
+  const showWork = useRef();
+  const showSkill = useRef();
+  const showResume = useRef();
+  const showSelf = useRef();
+  const isWork = ['/works'].includes(location.pathname);
+  const isSkill = ['/skills'].includes(location.pathname);
+  const isResume = ['/resume'].includes(location.pathname);
+  const isSelf = ['/self'].includes(location.pathname);
 
-    e.target.classList.add("scale-[1.2]");
-    e.target.classList.add("text-black");
-  }
+  useEffect( ()=>{
+    
+    showWork.current.classList.remove('text-black');
+    showSkill.current.classList.remove('text-black');
+    showResume.current.classList.remove('text-black');
+    showSelf.current.classList.remove('text-black');
+
+    if(isWork){
+      showWork.current.classList.add('text-black');
+    }
+    if(isSkill){
+      showSkill.current.classList.add('text-black');
+    }
+    if(isResume){
+      showResume.current.classList.add('text-black');
+    }
+    if(isSelf){
+      showSelf.current.classList.add('text-black');
+    }
+  } , [location.pathname] );
+  
 
   return (
-    <header className=" md:px-24 md:flex md:items-center md:justify-between p-4 pb-0  md:pb-4 bg-[#774069] border-[#774069] border-b-4 fixed w-screen top-0 h-[4.3rem] z-50 ">
+    <div className=" md:px-24 md:flex md:items-center md:justify-between p-4 pb-0  md:pb-4 bg-[#774069] border-[#774069] border-b-4 fixed w-screen top-0 h-[4.3rem] z-50 ">
       <div className="flex items-center justify-between mb-4 md:mb-0">
         {/* <h1 className="leading-none text-2xl text-grey-darkest">
           <Link className="no-underline text-grey-darkest hover:text-black text-[#FFFDD0]" to="/">
@@ -59,7 +83,7 @@ function Nav() {
             alt=""
             className="w-12 hover:scale-[1.2] duration-200"
             onMouseEnter={handleMouseOver}
-            onMouseLeave={handleMouseOut}
+            onMouseLeave={handleMouseOut} 
          />
          </Link>
         </h1>
@@ -86,10 +110,8 @@ function Nav() {
             <Link
               className="block no-underline hover:scale-[1.2] duration-200 py-2 text-grey-darkest hover:text-black md:border-none md:p-0 text-lg font-me text-[#FFFDD0] "
               to="/works">
-              <span className="flex flex-row justify-center items-center mainMenu"
-                onClick={(e)=>{handleMainMenu(e)}}
-              >
-              <HiOutlineDesktopComputer className="mr-[0.2rem]"/>
+              <span className="flex flex-row justify-center items-center mainMenu" ref={showWork}>
+                <HiOutlineDesktopComputer className="mr-[0.2rem]" />
               Works/{">"} 
               </span>
             </Link>
@@ -98,9 +120,8 @@ function Nav() {
             <Link
               className="border-t block no-underline hover:scale-[1.2] duration-200 py-2 text-grey-darkest hover:text-black md:border-none md:p-0 text-lg font-me text-[#FFFDD0]"
               to="/skills">
-                <span className="flex flex-row justify-center items-center mainMenu"
-                  onClick={(e)=>{handleMainMenu(e)}}>
-                  <LuBrainCircuit className="mr-[0.2rem]"/>
+                <span className="flex flex-row justify-center items-center mainMenu" ref={showSkill}>
+                  <LuBrainCircuit className="mr-[0.2rem]" />
                   Skills/{">"}
                 </span>
             </Link>
@@ -109,9 +130,8 @@ function Nav() {
             <Link
               className="border-t block no-underline hover:scale-[1.2] duration-200 py-2 text-grey-darkest hover:text-black md:border-none md:p-0 text-lg font-me text-[#FFFDD0]"
               to="/resume">
-              <span className="flex flex-row justify-center items-center mainMenu"
-                onClick={(e)=>{handleMainMenu(e)}}>
-                <BsFileEarmarkPerson className="mr-[0.2rem]"/>
+              <span className="flex flex-row justify-center items-center mainMenu" ref={showResume}>
+                <BsFileEarmarkPerson className="mr-[0.2rem]" />
                 Resume/{">"}
               </span>
             </Link>
@@ -120,9 +140,8 @@ function Nav() {
             <Link
               class="border-t block no-underline hover:scale-[1.2] duration-200 py-2 text-grey-darkest hover:text-black md:border-none md:p-0 text-lg font-me text-[#FFFDD0]"
               to="/self">
-              <span className="flex flex-row justify-center items-center mainMenu"
-                onClick={(e)=>{handleMainMenu(e)}}>
-                <BsInfoCircle className="mr-[0.2rem]"/>
+              <span className="flex flex-row justify-center items-center mainMenu" ref={showSelf}>
+                <BsInfoCircle className="mr-[0.2rem]" />
                 Self/{">"}
               </span>
             </Link>
@@ -131,7 +150,7 @@ function Nav() {
       </nav>
 
 
-    </header>
+    </div>
   );
 }
 

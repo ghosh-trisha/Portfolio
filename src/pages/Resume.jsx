@@ -24,8 +24,6 @@ export default function Resume() {
       <div className="w-full h-screen  bg-[#303030] absolute top-0  ">
 
 
-      <Social/>
-      <Nav />
       <h1 className='flex justify-center items-center mt-16 pt-3 font-me text-5xl text-[#FBAC20]'>
         <h1 className='text-6xl text-[#C07ABE]'>{"< "}</h1>
         resume 

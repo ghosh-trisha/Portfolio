@@ -10,6 +10,11 @@ import NotFound from './pages/NotFound.jsx'
 import CursorFollow from './components/CursorFollow.jsx'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Loader from './components/Loader.jsx'
+import ConditionalHeader from './components/ConditionalHeader.jsx';
+import Nav from './components/Nav.jsx';
+import Social from './components/Social.jsx';
+
+
 // import TypedComponent from './components/Typed.jsx'
 // import Rough from './pages/Rough.jsx'
 
@@ -24,21 +29,25 @@ function App() {
     }, 5000);   // 5000ms = 5s
   }, []);
 
+
   return (
     <>
+    <div className='min-h-screen w-screen'>
       {loading ? (
         <Loader />
       ) : 
       (
-        <>
+      <>
 
       {/* Others --------- */}
-      {/* nav */}
       <CursorFollow />
-
+      
 
       {/* Routers ------- */}
       <Router>
+
+        <ConditionalHeader />
+
         <Routes>
 
           <Route path='/' element={<Home/>} ></Route>
@@ -47,15 +56,19 @@ function App() {
           <Route path='/resume' element={<Resume />}></Route>
           <Route path='/self' element={<Self />}></Route>
           <Route path='/*' element={<NotFound />}></Route>
-          {/* <Route path='/biman' element={<Rough />}></Route> */}
-          
+        
         </Routes>
       </Router>
 
     </>
     )}
+    </div>
     </>
   )
 }
+
+
+
+
 
 export default App

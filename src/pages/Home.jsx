@@ -15,7 +15,7 @@ function Home() {
     <>
       <div className="bg-[#774069] h-screen w-screen px-20 fixed pb-0 z-10">
 
-        <div className='z-30 bg-transparent'>
+        <div className='z-30 bg-transparent max-lg:hidden'>
 
         <Draggable>
           <img
