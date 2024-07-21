@@ -6,7 +6,7 @@ import ControllCursorFollower from '../ControllCursorFollower'
 function Text() {
   return (
     <>
-      <div className='text-[#FFFDD0] text-[1.6rem] font-me relative left-[-7%] lg:top-[10%] lg:left-[5%] '>👋 Hi! &nbsp; I'm 
+      <div className='text-[#FFFDD0] text-[1.6rem] sm:text-[1.2rem] font-me relative left-[-7%] lg:top-[10%] lg:left-[5%] '>👋 Hi! &nbsp; I'm 
         <ControllCursorFollower className='text-[2rem]'>
           &nbsp;Trisha Ghosh,
         </ControllCursorFollower>
