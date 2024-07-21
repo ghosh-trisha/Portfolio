@@ -65,11 +65,11 @@ function Works() {
       <div className='min-h-screen w-screen bg-[#303030]'>
 
       
-        <h1 className='flex justify-center items-center mt-16 pt-10 font-me text-5xl text-[#FBAC20]'>
-          <h1 className='text-6xl text-[#C07ABE]'>{"< "}</h1>
+        <h1 className='flex justify-center items-center mt-16 pt-10 font-me text-5xl max-sm:text-2xl text-[#FBAC20]'>
+          <h1 className='text-6xl max-sm:text-2xl text-[#C07ABE]'>{"< "}</h1>
           works
-          <h1 className="text-8xl text-[#E8251C]">/</h1>
-          <h1 className="text-6xl text-[#C07ABE]">{" >"}</h1>
+          <h1 className="text-8xl max-sm:text-4xl text-[#E8251C]">/</h1>
+          <h1 className="text-6xl max-sm:text-3xl text-[#C07ABE]">{" >"}</h1>
         </h1>
 
         <p className="text-center mt-6 text-lg text-deepg text-[#FFFDD0] font-me">
@@ -93,11 +93,11 @@ function Works() {
                       {project.title}
                     </h2>
 
-                    <p className="text-lg max-w-[32rem] font-w">
+                    <p className="text-lg max-w-[32rem] font-w max-sm:max-w-[95vw]">
                       {project.description}
                     </p>
 
-                    <div className="border-2 border-[#C07ABE] rounded-lg flex flex-row  m-8 shadow-inner shadow-[#C07ABE] min-w-96 max-w-[31.5rem]">
+                    <div className="border-2 border-[#C07ABE] rounded-lg flex flex-row  m-8 max-sm:m-1 shadow-inner shadow-[#C07ABE] min-w-96 max-w-[31.5rem] max-sm:max-w-[95vw]">
                       <div className="flex justify-center items-center self-center h-full w-24 text-[1.38rem] text-[#C07ABE] font-me">
                         Tools
                       </div>

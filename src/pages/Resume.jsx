@@ -25,11 +25,11 @@ export default function Resume() {
     <>
       <div className="w-full h-screen  bg-[#303030] absolute top-0  ">
 
-        <h1 className='flex justify-center items-center mt-16 pt-3 font-me text-5xl text-[#FBAC20]'>
-          <h1 className='text-6xl text-[#C07ABE]'>{"< "}</h1>
+        <h1 className='flex justify-center items-center mt-16 pt-3 font-me text-5xl max-sm:text-2xl text-[#FBAC20]'>
+          <h1 className='text-6xl max-sm:text-3xl text-[#C07ABE]'>{"< "}</h1>
           resume
-          <h1 className='text-8xl text-[#E8251C]'>/</h1>
-          <h1 className='text-6xl text-[#C07ABE]'>{" >"}</h1>
+          <h1 className='text-8xl max-sm:text-4xl text-[#E8251C]'>/</h1>
+          <h1 className='text-6xl max-sm:text-3xl text-[#C07ABE]'>{" >"}</h1>
         </h1>
 
         <Suspense fallback={
