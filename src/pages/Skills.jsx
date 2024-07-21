@@ -62,11 +62,11 @@ const handleLineLeave = () => {
       <div className='min-h-screen w-screen bg-[#303030] pb-10'>
 
 
-      <h1 className='w-screen flex justify-center items-center mt-14 pt-10 font-me text-5xl text-[#FBAC20]'>
-        <h1 className='text-6xl text-[#C07ABE]'>{"< "}</h1>
-        Skills
-        <h1 className='text-8xl text-[#E8251C]'>/</h1>
-        <h1 className='text-6xl text-[#C07ABE]'>{" >"}</h1>
+      <h1 className='w-screen flex justify-center items-center mt-14 pt-10 font-me text-5xl max-sm:text-2xl  text-[#FBAC20]'>
+        <h1 className='text-6xl max-sm:text-3xl text-[#C07ABE]'>{"< "}</h1>
+        skills
+        <h1 className='text-8xl max-sm:text-4xl text-[#E8251C]'>/</h1>
+        <h1 className='text-6xl max-sm:text-3xl text-[#C07ABE]'>{" >"}</h1>
       </h1>
 
       {/* <div className='w-screen flex justify-center items-center bg-transparent mt-6 ml-10 mr-10'>
@@ -76,7 +76,7 @@ const handleLineLeave = () => {
       <SyntaxHighlighter 
       language="javascript" 
       style={srcery} 
-      className=' text-[1.3rem]' 
+      className=' text-[1.3rem] max-sm:text-[0.9rem]' 
       useInlineStyles={true}
       showLineNumbers={true} 
       showInlineLineNumbers={true} 
