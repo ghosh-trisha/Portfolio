@@ -82,7 +82,7 @@ function Works() {
           {data.map((project, index) => {
             if ((index % 2 == 1) & (window.innerWidth >= 1000)) {
               return (
-                <div className="flex flex-row justify-around items-center  mt-20 w-full mx-10 max-lg:flex-wrap">
+                <div className="flex flex-row justify-around items-center  mt-20 w-full mx-10 max-sm:mx-1 max-lg:flex-wrap">
                   {/* <Link><Tilt className="Tilt w-20 h-20 bg-[#774069] rounded-[20%] flex justify-center items-center text-[#FFFDD0] text-xl font-me hover:sw ml-0 shadow-c-purple" options={defaultOptions} style={{ height: 250, width: 250 }}>
               <div className='text-9xl'>🙂</div>
               </Tilt></Link> */}
