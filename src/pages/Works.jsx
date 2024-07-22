@@ -82,7 +82,7 @@ function Works() {
           {data.map((project, index) => {
             if ((index % 2 == 1) & (window.innerWidth >= 1000)) {
               return (
-                <div className="flex flex-row justify-around items-center  mt-20 w-full mx-10 max-sm:mx-1 max-lg:flex-wrap">
+                <div className="flex flex-row justify-around items-center  mt-20 w-full sm:mx-10  max-lg:flex-wrap">
                   {/* <Link><Tilt className="Tilt w-20 h-20 bg-[#774069] rounded-[20%] flex justify-center items-center text-[#FFFDD0] text-xl font-me hover:sw ml-0 shadow-c-purple" options={defaultOptions} style={{ height: 250, width: 250 }}>
               <div className='text-9xl'>🙂</div>
               </Tilt></Link> */}
@@ -99,7 +99,7 @@ function Works() {
 
                     <div className="border-2 border-[#C07ABE] rounded-lg flex flex-row  m-8 max-sm:m-1 shadow-inner shadow-[#C07ABE] sm:min-w-96 max-w-[31.5rem] max-sm:max-w-[95vw]">
                       <div className="flex justify-center items-center self-center h-full w-24 text-[1.38rem] text-[#C07ABE] font-me">
-                        Tools
+                        Tool
                       </div>
 
                       <div className="flex  items-center border-l-2 border-[#C07ABE] w-full flex-wrap font-w">
