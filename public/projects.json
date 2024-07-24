@@ -1,17 +1,19 @@
-[
+
+
+  [
     {
-      "title": "Personal Website",
-      "description": "A step-by-step guide to building your own personal website. Learn the basics of machine learning and how to get started. Learn the basics of machine learning and how to get started.",
-      "link": "https://bimanthecoderboy.netlify.app",
+      "title": "Portfolio",
+      "description": "This my portfolio website built with React, featuring a clean and responsive design. It highlights my projects, skills, and achievements as a full stack developer, demonstrating my proficiency in modern web technologies and user-friendly interfaces.",
+      "link": "https://trishaghosh.netlify.app",
       "pic": "/images/work/portfolio.png",
-      "tools": ["HTML", "CSS", "JavaScript"]
+      "tools": ["REACT", "TAILWIND", "NPM Tools"]
     },
     {
-      "title": "Introduction",
-      "description": "Learn the basics of machine learning and how to get started. Learn the basics of machine learning and how to get started. Learn the basics of machine learning and how to get started.",
+      "title": "Binaural Beats",
+      "description": "This is a Chrome extension uses JavaScript's Audio Context API to produce distinct frequencies in each ear, creating binaural beats. This project showcases my skills in audio processing and web development, enhancing relaxation and focus.",
       "link": "https://bimanthecoderboy.netlify.app",
-      "pic": "/images/work/buddha.jpeg",
-      "tools": ["Python", "Scikit-learn", "Pandas"]
+      "pic": "/images/work/beats.png",
+      "tools": ["HTML", "CSS", "JS", "Audio Context"]
     }
   ]
   
