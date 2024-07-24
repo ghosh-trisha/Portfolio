@@ -159,16 +159,16 @@ function Works() {
 
                   {/* text div */}
                   <div className=" text-[#FFFDD0] flex flex-col justify-center items-center  mr-0">
-                    <h2 className="m-4 text-5xl text-[#C07ABE] drop-shadow-c2-purple rounded-lg p-2 flex justify-center items-center font-me max-sm:mt-2">
+                    <h2 className="m-4 text-5xl text-[#C07ABE] drop-shadow-c2-purple rounded-lg p-2 flex justify-center items-center font-me max-sm:mt-4">
                       {project.title}
                     </h2>
 
-                    <p className="text-lg max-w-[32rem] font-w max-sm:max-w-[95vw] max-sm:mb-2">
+                    <p className="text-lg max-w-[32rem] font-w max-sm:max-w-[95vw] max-sm:mb-4">
                       {project.description}
                     </p>
 
                     <div className="border-2 border-[#C07ABE] rounded-lg flex flex-row  m-8 max-sm:m-1 shadow-inner shadow-[#C07ABE] sm:min-w-96 max-w-[31.5rem] max-sm:max-w-[95vw]">
-                      <div className="flex justify-center items-center self-center h-full w-24 text-[1.38rem] text-[#C07ABE] font-me max-sm:mb-2">
+                      <div className="flex justify-center items-center self-center h-full w-24 text-[1.38rem] text-[#C07ABE] font-me max-sm:mb-4">
                         Tools
                       </div>
 
