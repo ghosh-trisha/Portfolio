@@ -167,8 +167,8 @@ function Works() {
                       {project.description}
                     </p>
 
-                    <div className="border-2 border-[#C07ABE] rounded-lg flex flex-row  m-8 max-sm:m-1 shadow-inner shadow-[#C07ABE] sm:min-w-96 max-w-[31.5rem] max-sm:max-w-[95vw]">
-                      <div className="flex justify-center items-center self-center h-full w-24 text-[1.38rem] text-[#C07ABE] font-me max-sm:mb-4">
+                    <div className="border-2 border-[#C07ABE] rounded-lg flex flex-row  m-8 max-sm:m-1 shadow-inner shadow-[#C07ABE] sm:min-w-96 max-w-[31.5rem] max-sm:max-w-[95vw] max-sm:mb-4">
+                      <div className="flex justify-center items-center self-center h-full w-24 text-[1.38rem] text-[#C07ABE] font-me">
                         Tools
                       </div>
 
